@@ -21,7 +21,10 @@
         "FOOD": "Gastronomie",
         "ADVENTURE": "Aventure",
         "BEACH": "Plage",
-        "CRAFT": "Artisanat"
+        "CRAFT": "Artisanat",
+        "FESTIVALS": "Festivals",
+        "MUSIC": "Musique",
+        "TRADITIONAL": "Traditionnel"
     },
     "DESTINATIONS": {
         "LIST": {
@@ -304,7 +307,8 @@
         "REQUIRED": "Requis",
         "VERIFY": "Vérifier",
         "MOROCCO": "Maroc",
-        "RESERVE": "Réserver"
+        "RESERVE": "Réserver",
+        "LOCATION": "Lieu"
     },
     "LANG": {
         "EN": "Anglais",

@@ -21,7 +21,10 @@
         "FOOD": "Gastronomy",
         "ADVENTURE": "Adventure",
         "BEACH": "Beach",
-        "CRAFT": "Craftsmanship"
+        "CRAFT": "Craftsmanship",
+        "FESTIVALS": "Festivals",
+        "MUSIC": "Music",
+        "TRADITIONAL": "Traditional"
     },
     "DESTINATIONS": {
         "LIST": {
@@ -304,14 +307,14 @@
         "REQUIRED": "Required",
         "VERIFY": "Verify",
         "MOROCCO": "Morocco",
-        "RESERVE": "Reserve"
+        "RESERVE": "Reserve",
+        "LOCATION": "Location"
     },
     "LANG": {
         "EN": "English",
         "FR": "Français",
         "AR": "العربية",
-        "ES": "Español",
-        "DE": "Deutsch"
+        "ES": "Español"
     },
     "FOOTER": {
         "DESC": "Your ultimate guide to discovering the beauty, culture, and events of Morocco.",

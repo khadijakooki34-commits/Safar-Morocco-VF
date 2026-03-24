@@ -23,7 +23,10 @@
         "FOOD": "فن الطبخ",
         "ADVENTURE": "مغامرة",
         "BEACH": "شاطئ",
-        "CRAFT": "حرف يدوية"
+        "CRAFT": "حرف يدوية",
+        "FESTIVALS": "مهرجانات",
+        "MUSIC": "موسيقى",
+        "TRADITIONAL": "تقاليد"
     },
     "DESTINATIONS": {
         "RESERVATION": {
@@ -304,7 +307,8 @@
         "REQUIRED": "مطلوب",
         "VERIFY": "تحقق",
         "MOROCCO": "المغرب",
-        "RESERVE": "احجز"
+        "RESERVE": "احجز",
+        "LOCATION": "الموقع"
     },
     "LANG": {
         "EN": "الإنجليزية",
@@ -473,7 +477,7 @@
             "TO": "إلى :",
             "QUANTITY": "الكمية :",
             "TOTAL_PRICE": "السعر الإجمالي",
-            "PDF_INVOICE": "فاتورة PDF",
+            "PDF_INVOICE": "تحميل فاتورة",
             "OFFER_LABEL": "عرض"
         }
     }

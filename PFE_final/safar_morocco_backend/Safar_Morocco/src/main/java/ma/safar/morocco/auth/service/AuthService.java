@@ -27,6 +27,7 @@ public class AuthService {
 
     private static final String USER_NOT_FOUND_MSG = "Utilisateur non trouvé";
     private static final String BEARER_PREFIX = "Bearer";
+    private static final String AUDIT_RESOURCE_USER = "Utilisateur";
 
     private final UtilisateurRepository utilisateurRepository;
     private final PasswordEncoder passwordEncoder;
@@ -71,7 +72,7 @@ public class AuthService {
         // Send Email
         emailService.sendVerificationEmail(user.getEmail(), user.getNom(), token);
 
-        auditService.logAction(user.getId(), "USER_REGISTERED", "Utilisateur", user.getId(),
+        auditService.logAction(user.getId(), "USER_REGISTERED", AUDIT_RESOURCE_USER, user.getId(),
                 "New user registered: " + user.getEmail());
         activityLogService.logActivity(user, "ACCOUNT_CREATED",
                 "Compte créé via enregistrement. En attente de vérification.");
@@ -122,7 +123,7 @@ public class AuthService {
         var user = utilisateurRepository.findByEmail(request.getEmail())
                 .orElseThrow(() -> new IllegalArgumentException(USER_NOT_FOUND_MSG));
 
-        auditService.logAction(user.getId(), "USER_LOGIN", "Utilisateur", user.getId(),
+        auditService.logAction(user.getId(), "USER_LOGIN", AUDIT_RESOURCE_USER, user.getId(),
                 "User logged in: " + user.getEmail());
 
         if (Boolean.TRUE.equals(user.getCompteBloquer())) {
@@ -235,7 +236,7 @@ public class AuthService {
 
         emailService.sendPasswordResetEmail(user.getEmail(), token);
 
-        auditService.logAction(user.getId(), "PASSWORD_RESET_REQUESTED", "Utilisateur", user.getId(),
+        auditService.logAction(user.getId(), "PASSWORD_RESET_REQUESTED", AUDIT_RESOURCE_USER, user.getId(),
                 "Password reset requested for: " + user.getEmail());
         activityLogService.logActivity(user, "PASSWORD_RESET_REQUEST",
                 "Demande de réinitialisation de mot de passe envoyée.");
@@ -265,7 +266,7 @@ public class AuthService {
         resetToken.setUsed(true);
         passwordResetTokenRepository.save(resetToken);
 
-        auditService.logAction(user.getId(), "PASSWORD_RESET_COMPLETED", "Utilisateur", user.getId(),
+        auditService.logAction(user.getId(), "PASSWORD_RESET_COMPLETED", AUDIT_RESOURCE_USER, user.getId(),
                 "Password reset completed for: " + user.getEmail());
         activityLogService.logActivity(user, "PASSWORD_RESET", "Mot de passe réinitialisé avec succès.");
     }

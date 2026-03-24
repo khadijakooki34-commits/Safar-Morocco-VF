@@ -117,13 +117,11 @@ public class RecommendationService {
     }
 
     private Set<String> getPreferredCategories(List<Reservation> reservations) {
-        Set<String> reservedCategories = reservations.stream()
+        return reservations.stream()
                 .filter(r -> r.getEvenement() != null && r.getEvenement().getDestination() != null)
                 .map(r -> r.getEvenement().getDestination().getCategorie())
                 .filter(Objects::nonNull)
                 .collect(Collectors.toSet());
-
-        return reservedCategories;
     }
 
     private Set<Long> getVisitedDestinations(List<Reservation> reservations) {

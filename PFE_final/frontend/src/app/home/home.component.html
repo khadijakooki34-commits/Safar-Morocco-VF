@@ -83,7 +83,7 @@
                                 class="img-fluid w-100" style="height: 220px; object-fit: cover;" [alt]="event.nom">
                             <div
                                 class="position-absolute top-0 end-0 m-3 px-3 py-1 bg-white-glass backdrop-blur rounded-pill shadow-sm">
-                                <span class="fw-bold text-dark small">{{ event.dateDebut | date:'MMM dd' }}</span>
+                                <span class="fw-bold text-dark small">{{ event.dateDebut | cleanDate:'MMM dd':'':currentLang }}</span>
                             </div>
                         </div>
                         <div class="p-4">

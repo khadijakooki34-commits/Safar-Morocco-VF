@@ -53,8 +53,8 @@
                     <div class="event-img-wrapper">
                         <img [src]="event.imageUrl | imageUrl" alt="{{event.nom}}">
                         <div class="event-date-pill">
-                            <span class="pill-day">{{ event.dateDebut | date:'dd' }}</span>
-                            <span class="pill-month">{{ event.dateDebut | date:'MMM' }}</span>
+                            <span class="pill-day">{{ event.dateDebut | cleanDate:'dd':'':currentLang }}</span>
+                            <span class="pill-month">{{ event.dateDebut | cleanDate:'MMM':'':currentLang }}</span>
                         </div>
                         <span class="event-category-tag">{{ (event.eventType || 'Cultural') | categoryName }}</span>
                     </div>

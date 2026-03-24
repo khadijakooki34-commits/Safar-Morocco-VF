@@ -20,7 +20,7 @@
       </span>
       <h1 class="ed-hero__title">{{ 'EVENTS.NAMES.' + event.nom | translate }}</h1>
       <div class="ed-hero__badges">
-        <span class="ed-badge"><i class="bi bi-calendar-event"></i> {{ event.dateDebut | date:'mediumDate':'':currentLang }}</span>
+        <span class="ed-badge"><i class="bi bi-calendar-event"></i> {{ event.dateDebut | cleanDate:'mediumDate':'':currentLang }}</span>
         <span class="ed-badge"><i class="bi bi-geo-alt-fill"></i> {{ getCityTranslationKey(event.lieu) | translate }}</span>
         <span class="ed-badge"><i class="bi bi-clock"></i> 
           {{ (getEventDuration() > 1 ? 'EVENTS.DETAIL.DURATION_DAYS' : 'EVENTS.DETAIL.DURATION_DAY') | translate:{count: getEventDuration()} }}
@@ -39,7 +39,7 @@
             <div class="ed-infobar__icon"><i class="bi bi-calendar-check"></i></div>
             <div>
               <span class="ed-infobar__label">{{ 'EVENTS.DETAIL.DATE' | translate }}</span>
-              <span class="ed-infobar__value">{{ event.dateDebut | date:'MMM d':'':currentLang }} — {{ event.dateFin | date:'mediumDate':'':currentLang }}</span>
+              <span class="ed-infobar__value">{{ event.dateDebut | cleanDate:'MMM d':'':currentLang }} — {{ event.dateFin | cleanDate:'mediumDate':'':currentLang }}</span>
             </div>
           </div>
           <div class="ed-infobar__sep"></div>
@@ -90,8 +90,8 @@
                 {{ i + 1 }}
               </div>
               <div class="ed-timeline__card">
-                <div class="ed-timeline__day">{{ day | date:'EEE':'':currentLang }}</div>
-                <div class="ed-timeline__date">{{ day | date:'d MMM':'':currentLang }}</div>
+                <div class="ed-timeline__day">{{ day | cleanDate:'EEE':'':currentLang }}</div>
+                <div class="ed-timeline__date">{{ day | cleanDate:'d MMM':'':currentLang }}</div>
               </div>
             </div>
           </div>

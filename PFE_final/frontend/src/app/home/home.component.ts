@@ -6,6 +6,7 @@ import { ApiService } from '../core/services/api.service';
 import { AuthService } from '../core/services/auth.service';
 import { Destination } from '../core/models/destination.model';
 import * as L from 'leaflet';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     standalone: false,
@@ -24,6 +25,10 @@ export class HomeComponent implements OnInit, AfterViewInit {
         return this.authService.isLoggedIn;
     }
 
+    get currentLang(): string {
+        return this.translate.currentLang || this.translate.defaultLang || 'fr';
+    }
+
     constructor(
         private destinationService: DestinationService,
         private apiService: ApiService,
@@ -31,7 +36,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
         private router: Router,
         private snackBar: MatSnackBar,
         private ngZone: NgZone,
-        private cdr: ChangeDetectorRef
+        private cdr: ChangeDetectorRef,
+        public translate: TranslateService
     ) { }
 
     ngOnInit(): void {
@@ -49,7 +55,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
             },
             error: (e) => {
                 this.ngZone.run(() => {
-                    console.error('❌ HOME: Error fetching destinations', e);
+                    console.error('HOME: Error fetching destinations', e);
                     this.checkLoading();
                     this.cdr.detectChanges();
                 });
@@ -67,7 +73,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
             },
             error: (e) => {
                 this.ngZone.run(() => {
-                    console.error('❌ HOME: Error fetching events', e);
+                    console.error('HOME: Error fetching events', e);
                     this.checkLoading();
                     this.cdr.detectChanges();
                 });

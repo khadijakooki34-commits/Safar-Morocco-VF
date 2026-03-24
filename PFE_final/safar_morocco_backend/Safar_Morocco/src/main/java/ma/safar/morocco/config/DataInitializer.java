@@ -294,7 +294,7 @@ public class DataInitializer {
                                                         eventRepository.save(ev);
                                                 });
                                         }
-                                        logger.info("✅ Event dates updated to future 2026 dates.");
+                                        logger.info("Event dates updated to future 2026 dates.");
                                 }
 
                                 /*
@@ -401,7 +401,7 @@ public class DataInitializer {
                                                         LocalDateTime.of(2026, 9, 15, 10, 0),
                                                         LocalDateTime.of(2026, 9, 17, 23, 0), "Imilchil",
                                                         imilchil,
-                                                        "https://www.awesomemitten.com/wp-content/uploads/2015/07/Cherry-Festival.png", "TRADITIONAL",
+                                                        "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/YNqJlL3B9gIRgqnp/6r5a1409-scaled-AoPexq8b3OH1oGVV.jpeg", "TRADITIONAL",
                                                         "Le Moussem des Fiançailles d'Imilchil, aussi appelé Moussem de Had Imilchil, est un festival nuptial unique au monde ancré dans la légende tragique de Tislit et Isli, deux jeunes amants issus de tribus ennemies de l'Aït Haddidou dont les larmes auraient donné naissance aux lacs jumeaux du Haut Atlas. Pour commémorer cet amour impossible, les tribus berbères décidèrent d'organiser chaque automne un grand rassemblement où les jeunes hommes et femmes celibataires pouvaient se rencontrer librement et choisir leur futur époux ou épouse, transcendant ainsi les rivalités tribales. Ce moussem unique perpétue encore aujourd'hui les traditions vestimentaires, musicales et sociales des Aït Haddidou et réunit des milliers de participants autour d'un rituel de fiançailles collectif au cœur des montagnes sauvages de l'Atlas.");
 
                                         // 12. Tan-Tan Moussem

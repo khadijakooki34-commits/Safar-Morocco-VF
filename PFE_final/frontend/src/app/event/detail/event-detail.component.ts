@@ -149,7 +149,7 @@ export class EventDetailComponent implements OnInit, OnDestroy {
     /** Returns city translation key */
     getCityTranslationKey(city: string): string {
         if (!city) return '';
-        const normalized = city.trim().toUpperCase();
+        const normalized = city.trim().toUpperCase().replace(/\s+/g, '_');
         return `COMMON.CITIES.${normalized}`;
     }
 

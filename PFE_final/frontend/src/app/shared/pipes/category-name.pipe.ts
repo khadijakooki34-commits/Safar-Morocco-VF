@@ -19,6 +19,7 @@ export class CategoryNamePipe implements PipeTransform {
         'BEACH': 'CATEGORIES.BEACH',
         'CRAFT': 'CATEGORIES.CRAFT',
         'FESTIVALS': 'CATEGORIES.FESTIVALS',
+        'FESTIVAL': 'CATEGORIES.FESTIVAL',
         'MUSIC': 'CATEGORIES.MUSIC',
         'TRADITIONAL': 'CATEGORIES.TRADITIONAL'
     };

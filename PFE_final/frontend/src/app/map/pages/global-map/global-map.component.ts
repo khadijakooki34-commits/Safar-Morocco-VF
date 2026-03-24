@@ -4,6 +4,8 @@ import 'leaflet-routing-machine';
 import { Destination } from '../../../core/models/destination.model';
 import { DestinationService } from '../../../core/services/destination.service';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
+import { TranslateValuePipe } from '../../../shared/pipes/translate-value.pipe';
 
 @Component({
     standalone: false,
@@ -40,11 +42,18 @@ export class GlobalMapComponent implements OnInit, AfterViewInit {
         private destinationService: DestinationService,
         private router: Router,
         private cdr: ChangeDetectorRef,
-        private ngZone: NgZone
+        private ngZone: NgZone,
+        private translate: TranslateService,
+        private valueTranslate: TranslateValuePipe
     ) { }
 
     ngOnInit(): void {
         this.isLoading = true;
+        this.translate.onLangChange.subscribe(() => {
+            if (!this.isLoading) {
+                this.addMarkers();
+            }
+        });
         this.destinationService.getAllDestinations().subscribe({
             next: (data) => {
                 this.destinations = data;
@@ -111,13 +120,18 @@ export class GlobalMapComponent implements OnInit, AfterViewInit {
                     imgUrl = clean.startsWith('uploads/') ? '/' + clean : '/uploads/' + clean;
                 }
 
+                const translatedNom = this.valueTranslate.transform(dest.nom);
+                const translatedType = this.valueTranslate.transform(dest.type);
+                const viewDetailsTxt = this.translate.instant('DESTINATIONS.LIST.VIEW_DETAILS');
+                const btnTranslationText = viewDetailsTxt !== 'DESTINATIONS.LIST.VIEW_DETAILS' ? viewDetailsTxt : 'View Details';
+
                 const popupContent = `
                     <div class="map-popup-card">
                         <img src="${imgUrl}" class="popup-img">
                         <div class="popup-info">
-                            <h6>${dest.nom}</h6>
-                            <p>${dest.type}</p>
-                            <button class="btn-detail" data-id="${dest.id}">View Details</button>
+                            <h6>${translatedNom}</h6>
+                            <p>${translatedType}</p>
+                            <button class="btn-detail" data-id="${dest.id}">${btnTranslationText}</button>
                         </div>
                     </div>
                 `;

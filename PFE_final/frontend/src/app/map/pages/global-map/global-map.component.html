@@ -38,7 +38,7 @@
                         [class.selected]="selectedDestination?.id === dest.id" (click)="selectDestination(dest)">
                         <img [src]="(dest.thumbnailUrl || dest.medias?.[0]) | imageUrl" class="item-img">
                         <div class="item-info">
-                            <h6>{{ dest.nom }}</h6>
+                            <h6>{{ dest.nom | translateValue }}</h6>
                             <span class="badge-cat">{{ dest.categorie | categoryName }}</span>
                             <p class="mb-0 small text-muted"><i class="bi bi-star-fill text-warning me-1"></i> {{
                                 dest.averageRating || '0.0' }}</p>

@@ -151,7 +151,71 @@
             "STATUS": "Status",
             "ABOUT": "About the Event",
             "JOIN": "Book Your Spot",
-            "PRICE_FREE": "Free Entry"
+            "PRICE_FREE": "Free Entry",
+            "ALL_EVENTS": "All Events",
+            "ENTRY": "Entry",
+            "PROGRAM": "Program & Schedule",
+            "PRACTICAL_INFO": "Practical Info",
+            "ACCESS_TRANSPORT": "Access & Transport",
+            "ACCESS_TRANSPORT_DESC": "Accessible by public transport. Buses and trams are near the venue.",
+            "ACCESSIBILITY": "Accessibility",
+            "ACCESSIBILITY_DESC": "Site accessible to persons with reduced mobility. Special parking available.",
+            "ENTRY_POLICY": "Entry Policy",
+            "ENTRY_POLICY_DESC": "Free entry. Online reservation recommended to guarantee your spot.",
+            "DONT_MISS": "Don't miss out!",
+            "EVENT_ENDED": "Event ended",
+            "BOOK_DESC": "Book now and live an unforgettable experience at {{location}}.",
+            "ALREADY_BOOKED": "Already booked",
+            "EVENT_ONGOING": "Event currently ongoing",
+            "STARTS_IN": "Event starts in",
+            "DURATION_DAYS": "{{count}} days",
+            "DURATION_DAY": "{{count}} day",
+            "UNITS": {
+                "DAYS": "Days",
+                "HOURS": "Hours",
+                "MINUTES": "Min",
+                "SECONDS": "Sec"
+            }
+        },
+        "NAMES": {
+            "Festival Gnaoua": "Gnaoua Festival",
+            "Mawazine": "Mawazine",
+            "Timitar": "Timitar",
+            "Fes Sacred Music": "Fes Festival of Sacred Music",
+            "Rose Festival": "Rose Festival",
+            "Tanjazz": "Tanjazz",
+            "Film Festival": "Marrakech International Film Festival",
+            "Cherry Festival": "Cherry Festival",
+            "Camel Festival": "Camel Festival",
+            "Sahara Marathon": "Sahara Marathon",
+            "Imilchil Marriage": "Imilchil Marriage Festival",
+            "Tan-Tan Moussem": "Tan-Tan Moussem",
+            "Kitesurf World Cup": "Kitesurf World Cup"
+        },
+        "TYPES": {
+            "FESTIVAL": "Festival",
+            "CULTURAL": "Cultural",
+            "MUSIC": "Music",
+            "TRADITIONAL": "Traditional",
+            "EVENT": "Event"
+        },
+        "TAGS": {
+            "MOROCCO": "#Morocco",
+            "CULTURE": "#Culture",
+            "TRAVEL": "#Travel",
+            "FESTIVAL": "#Festival",
+            "FEAST": "#Feast",
+            "ANIMATION": "#Activities",
+            "CULTURAL": "#Cultural",
+            "HERITAGE": "#Heritage",
+            "ART": "#Art",
+            "MUSIC": "#Music",
+            "CONCERT": "#Concert",
+            "LIVE": "#Live",
+            "TRADITION": "#Tradition",
+            "FOLKLORE": "#Folklore",
+            "CRAFT": "#Craft",
+            "EVENT": "#Event"
         }
     },
     "AUTH": {
@@ -308,7 +372,21 @@
         "VERIFY": "Verify",
         "MOROCCO": "Morocco",
         "RESERVE": "Reserve",
-        "LOCATION": "Location"
+        "LOCATION": "Location",
+        "CITIES": {
+            "RABAT": "Rabat",
+            "CASABLANCA": "Casablanca",
+            "MARRAKECH": "Marrakesh",
+            "FES": "Fez",
+            "FEZ": "Fez",
+            "TANGER": "Tangier",
+            "TANGIER": "Tangier",
+            "AGADIR": "Agadir",
+            "MEKNES": "Meknes",
+            "OUJDA": "Oujda",
+            "KENITRA": "Kenitra",
+            "TETOUAN": "Tetouan"
+        }
     },
     "LANG": {
         "EN": "English",

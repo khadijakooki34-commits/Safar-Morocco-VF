@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { ApiService } from '../../core/services/api.service';
 import { AuthService } from '../../core/services/auth.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     standalone: false,
@@ -29,7 +30,8 @@ export class EventDetailComponent implements OnInit, OnDestroy {
         private authService: AuthService,
         private snackBar: MatSnackBar,
         private ngZone: NgZone,
-        private cdr: ChangeDetectorRef
+        private cdr: ChangeDetectorRef,
+        public translate: TranslateService
     ) {
         this.ngZone.run(() => {
             const nav = this.router.getCurrentNavigation();
@@ -140,6 +142,17 @@ export class EventDetailComponent implements OnInit, OnDestroy {
 
     // --- Enrichment helpers ---
 
+    get currentLang(): string {
+        return this.translate.currentLang || this.translate.defaultLang || 'fr';
+    }
+
+    /** Returns city translation key */
+    getCityTranslationKey(city: string): string {
+        if (!city) return '';
+        const normalized = city.trim().toUpperCase();
+        return `COMMON.CITIES.${normalized}`;
+    }
+
     private parseDate(dateStr: any): Date {
         if (!dateStr) return new Date();
         if (dateStr instanceof Date) return dateStr;
@@ -182,28 +195,24 @@ export class EventDetailComponent implements OnInit, OnDestroy {
         return days.slice(0, 10); // Limit to 10 days max for display
     }
 
-    /** Returns tags based on eventType */
-    getEventTags(): string[] {
-        const baseTags = ['#Maroc', '#Culture', '#Voyage'];
+    /** Returns tags based on eventType - returns translation keys */
+    getEventTagsKeys(): string[] {
+        const baseTags = ['EVENTS.TAGS.MOROCCO', 'EVENTS.TAGS.CULTURE', 'EVENTS.TAGS.TRAVEL'];
         const typeMap: { [key: string]: string[] } = {
-            'FESTIVAL': ['#Festival', '#Fête', '#Animation'],
-            'CULTURAL': ['#Culturel', '#Patrimoine', '#Art'],
-            'MUSIC': ['#Musique', '#Concert', '#Live'],
-            'TRADITIONAL': ['#Tradition', '#Folklore', '#Artisanat'],
+            'FESTIVAL': ['EVENTS.TAGS.FESTIVAL', 'EVENTS.TAGS.FEAST', 'EVENTS.TAGS.ANIMATION'],
+            'CULTURAL': ['EVENTS.TAGS.CULTURAL', 'EVENTS.TAGS.HERITAGE', 'EVENTS.TAGS.ART'],
+            'MUSIC': ['EVENTS.TAGS.MUSIC', 'EVENTS.TAGS.CONCERT', 'EVENTS.TAGS.LIVE'],
+            'TRADITIONAL': ['EVENTS.TAGS.TRADITION', 'EVENTS.TAGS.FOLKLORE', 'EVENTS.TAGS.CRAFT'],
         };
         const type = (this.event?.eventType || '').toUpperCase();
-        return [...(typeMap[type] || ['#Événement']), ...baseTags];
+        return [...(typeMap[type] || ['EVENTS.TAGS.EVENT']), ...baseTags];
     }
 
-    /** Event type display label */
-    getEventTypeLabel(): string {
-        const map: { [k: string]: string } = {
-            'FESTIVAL': 'Festival',
-            'CULTURAL': 'Culturel',
-            'MUSIC': 'Musique',
-            'TRADITIONAL': 'Traditionnel',
-        };
-        return map[(this.event?.eventType || '').toUpperCase()] || this.event?.eventType || 'Événement';
+    /** Event type display label - returns translation key */
+    getEventTypeLabelKey(): string {
+        const type = (this.event?.eventType || '').toUpperCase();
+        const validTypes = ['FESTIVAL', 'CULTURAL', 'MUSIC', 'TRADITIONAL'];
+        return validTypes.includes(type) ? `EVENTS.TYPES.${type}` : 'EVENTS.TYPES.EVENT';
     }
 
     /** Event type icon class */

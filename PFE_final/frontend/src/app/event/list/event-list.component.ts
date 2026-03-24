@@ -1,5 +1,6 @@
 import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { ApiService } from '../../core/services/api.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     standalone: false,
@@ -19,7 +20,8 @@ export class EventListComponent implements OnInit {
 
     constructor(
         private apiService: ApiService,
-        private cdr: ChangeDetectorRef
+        private cdr: ChangeDetectorRef,
+        private translate: TranslateService
     ) { }
 
     ngOnInit(): void {
@@ -106,5 +108,15 @@ export class EventListComponent implements OnInit {
         this.locationTerm = '';
         this.selectedCategory = 'All Events';
         this.applyFilters();
+    }
+
+    getCityTranslationKey(city: string): string {
+        if (!city) return 'COMMON.LOCATION';
+        const key = city.toUpperCase().replace(/\s+/g, '_');
+        return `COMMON.CITIES.${key}`;
+    }
+
+    get currentLang(): string {
+        return this.translate.currentLang || 'fr';
     }
 }

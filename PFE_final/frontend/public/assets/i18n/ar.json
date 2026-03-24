@@ -153,7 +153,71 @@
             "STATUS": "الحالة",
             "ABOUT": "عن الحدث",
             "JOIN": "احجز مكانك",
-            "PRICE_FREE": "دخول مجاني"
+            "PRICE_FREE": "دخول مجاني",
+            "ALL_EVENTS": "كل الأحداث",
+            "ENTRY": "الدخول",
+            "PROGRAM": "البرنامج والجدول الزمني",
+            "PRACTICAL_INFO": "معلومات عملية",
+            "ACCESS_TRANSPORT": "الوصول والنقل",
+            "ACCESS_TRANSPORT_DESC": "يمكن الوصول إليه عبر وسائل النقل العام. الحافلات والترام بالقرب من الموقع.",
+            "ACCESSIBILITY": "إمكانية الوصول",
+            "ACCESSIBILITY_DESC": "الموقع متاح للأشخاص ذوي القدرة المحدودة على الحركة. يتوفر موقف سيارات خاص.",
+            "ENTRY_POLICY": "سياسة الدخول",
+            "ENTRY_POLICY_DESC": "دخول حر. يوصى بالحجز عبر الإنترنت لضمان مكانك.",
+            "DONT_MISS": "لا تفوتوا الفرصة!",
+            "EVENT_ENDED": "انتهى الحدث",
+            "BOOK_DESC": "احجز الآن وعش تجربة لا تُنسى في {{location}}.",
+            "ALREADY_BOOKED": "محجوز بالفعل",
+            "EVENT_ONGOING": "الحدث جارٍ حالياً",
+            "STARTS_IN": "يبدأ الحدث خلال",
+            "DURATION_DAYS": "{{count}} أيام",
+            "DURATION_DAY": "{{count}} يوم",
+            "UNITS": {
+                "DAYS": "أيام",
+                "HOURS": "ساعات",
+                "MINUTES": "دقائق",
+                "SECONDS": "ثواني"
+            }
+        },
+        "NAMES": {
+            "Festival Gnaoua": "مهرجان كناوة",
+            "Mawazine": "موازين",
+            "Timitar": "تيميتار",
+            "Fes Sacred Music": "مهرجان فاس للموسيقى الروحية",
+            "Rose Festival": "مهرجان الورود",
+            "Tanjazz": "طنجة جاز",
+            "Film Festival": "المهرجان الدولي للفيلم بمراكش",
+            "Cherry Festival": "مهرجان حب الملوك",
+            "Camel Festival": "مهرجان الإبل",
+            "Sahara Marathon": "ماراثون الصحراء",
+            "Imilchil Marriage": "موسم إميلشيل للخطوبة",
+            "Tan-Tan Moussem": "موسم طانطان",
+            "Kitesurf World Cup": "كأس العالم لركوب الأمواج"
+        },
+        "TYPES": {
+            "FESTIVAL": "مهرجان",
+            "CULTURAL": "ثقافي",
+            "MUSIC": "موسيقى",
+            "TRADITIONAL": "تقليدي",
+            "EVENT": "حدث"
+        },
+        "TAGS": {
+            "MOROCCO": "#المغرب",
+            "CULTURE": "#ثقافة",
+            "TRAVEL": "#سفر",
+            "FESTIVAL": "#مهرجان",
+            "FEAST": "#عيد",
+            "ANIMATION": "#تنشيط",
+            "CULTURAL": "#ثقافي",
+            "HERITAGE": "#تراث",
+            "ART": "#فن",
+            "MUSIC": "#موسيقى",
+            "CONCERT": "#حفل",
+            "LIVE": "#مباشر",
+            "TRADITION": "#تقاليد",
+            "FOLKLORE": "#فولكلور",
+            "CRAFT": "#حرف_يدوية",
+            "EVENT": "#حدث"
         }
     },
     "AUTH": {
@@ -308,7 +372,21 @@
         "VERIFY": "تحقق",
         "MOROCCO": "المغرب",
         "RESERVE": "احجز",
-        "LOCATION": "الموقع"
+        "LOCATION": "الموقع",
+        "CITIES": {
+            "RABAT": "الرباط",
+            "CASABLANCA": "الدار البيضاء",
+            "MARRAKECH": "مراكش",
+            "FES": "فاس",
+            "FEZ": "فاس",
+            "TANGER": "طنجة",
+            "TANGIER": "طنجة",
+            "AGADIR": "أكادير",
+            "MEKNES": "مكناس",
+            "OUJDA": "وجدة",
+            "KENITRA": "القنيطرة",
+            "TETOUAN": "تطوان"
+        }
     },
     "LANG": {
         "EN": "الإنجليزية",

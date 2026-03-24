@@ -21,7 +21,10 @@
         "FOOD": "Gastronomía",
         "ADVENTURE": "Aventura",
         "BEACH": "Playa",
-        "CRAFT": "Artesanía"
+        "CRAFT": "Artesanía",
+        "FESTIVALS": "Festivales",
+        "MUSIC": "Música",
+        "TRADITIONAL": "Tradicional"
     },
     "DESTINATIONS": {
         "RESERVATION": {
@@ -148,7 +151,71 @@
             "STATUS": "Estado",
             "ABOUT": "Sobre el evento",
             "JOIN": "Reserva tu lugar",
-            "PRICE_FREE": "Entrada gratuita"
+            "PRICE_FREE": "Entrada gratuita",
+            "ALL_EVENTS": "Todos los eventos",
+            "ENTRY": "Entrada",
+            "PROGRAM": "Programa y calendario",
+            "PRACTICAL_INFO": "Información práctica",
+            "ACCESS_TRANSPORT": "Acceso y transporte",
+            "ACCESS_TRANSPORT_DESC": "Accesible en transporte público. Autobuses y tranvías cerca del lugar.",
+            "ACCESSIBILITY": "Accesibilidad",
+            "ACCESSIBILITY_DESC": "Sitio accesible para personas con movilidad reducida. Aparcamiento especial disponible.",
+            "ENTRY_POLICY": "Política de entrada",
+            "ENTRY_POLICY_DESC": "Entrada libre. Se recomienda reserva online para garantizar su lugar.",
+            "DONT_MISS": "¡No te lo pierdas!",
+            "EVENT_ENDED": "Evento finalizado",
+            "BOOK_DESC": "Reserva ahora y vive una experiencia inolvidable en {{location}}.",
+            "ALREADY_BOOKED": "Ya reservado",
+            "EVENT_ONGOING": "Evento actualmente en curso",
+            "STARTS_IN": "El evento comienza en",
+            "DURATION_DAYS": "{{count}} días",
+            "DURATION_DAY": "{{count}} día",
+            "UNITS": {
+                "DAYS": "Días",
+                "HOURS": "Horas",
+                "MINUTES": "Min",
+                "SECONDS": "Seg"
+            }
+        },
+        "NAMES": {
+            "Festival Gnaoua": "Festival de Gnaoua",
+            "Mawazine": "Mawazine",
+            "Timitar": "Timitar",
+            "Fes Sacred Music": "Festival de Músicas Sacras de Fez",
+            "Rose Festival": "Festival de las Rosas",
+            "Tanjazz": "Tanjazz",
+            "Film Festival": "Festival Internacional de Cine de Marrakech",
+            "Cherry Festival": "Festival de las Cerezas",
+            "Camel Festival": "Festival de los Camellos",
+            "Sahara Marathon": "Maratón del Sahara",
+            "Imilchil Marriage": "Moussem de Imilchil",
+            "Tan-Tan Moussem": "Moussem de Tan-Tan",
+            "Kitesurf World Cup": "Copa del Mundo de Kitesurf"
+        },
+        "TYPES": {
+            "FESTIVAL": "Festival",
+            "CULTURAL": "Cultural",
+            "MUSIC": "Música",
+            "TRADITIONAL": "Tradicional",
+            "EVENT": "Evento"
+        },
+        "TAGS": {
+            "MOROCCO": "#Marruecos",
+            "CULTURE": "#Cultura",
+            "TRAVEL": "#Viaje",
+            "FESTIVAL": "#Festival",
+            "FEAST": "#Fiesta",
+            "ANIMATION": "#Animación",
+            "CULTURAL": "#Cultural",
+            "HERITAGE": "#Patrimonio",
+            "ART": "#Arte",
+            "MUSIC": "#Música",
+            "CONCERT": "#Concierto",
+            "LIVE": "#Directo",
+            "TRADITION": "#Tradición",
+            "FOLKLORE": "#Folclore",
+            "CRAFT": "#Artesanía",
+            "EVENT": "#Evento"
         }
     },
     "AUTH": {
@@ -265,7 +332,7 @@
         },
         "SHOW_EMAIL": {
             "TITLE": "Mostrar email",
-            "DESC": "Display your email address on your public profile."
+            "DESC": "Muestra tu dirección de correo electrónico en tu perfil público."
         },
         "MAP_PERMISSIONS": {
             "TITLE": "Ubicación en el mapa",
@@ -301,7 +368,22 @@
         "REQUIRED": "Obligatorio",
         "VERIFY": "Verificar",
         "MOROCCO": "Marruecos",
-        "RESERVE": "Reservar"
+        "RESERVE": "Reservar",
+        "LOCATION": "Ubicación",
+        "CITIES": {
+            "RABAT": "Rabat",
+            "CASABLANCA": "Casablanca",
+            "MARRAKECH": "Marrakech",
+            "FES": "Fez",
+            "FEZ": "Fez",
+            "TANGER": "Tánger",
+            "TANGIER": "Tánger",
+            "AGADIR": "Agadir",
+            "MEKNES": "Mequinez",
+            "OUJDA": "Oujda",
+            "KENITRA": "Kenitra",
+            "TETOUAN": "Tetuán"
+        }
     },
     "LANG": {
         "EN": "Inglés",
@@ -376,7 +458,7 @@
             },
             "AI": {
                 "TITLE": "Compañero IA",
-                "DESC": "Obtén recomendaciones personalizadas de nuestro chatbot de IA."
+                "DESC": "Obtén recomendaciones personalizadas de notre chatbot de IA."
             },
             "MAPPED": {
                 "TITLE": "Mapa interactivo",
@@ -450,7 +532,7 @@
         "LABEL_SUBJECT": "Asunto",
         "LABEL_MESSAGE": "Tu mensaje",
         "BTN_SEND": "Enviar mensaje",
-        "ERROR_NAME": "El nombre debe tener al menos 3 caracteres.",
+        "ERROR_NAME": "El nombre debe tener al moins 3 caracteres.",
         "ERROR_EMAIL": "Por favor, introduce un correo electrónico válido.",
         "ERROR_SUBJECT": "El asunto es obligatorio.",
         "ERROR_MESSAGE": "El mensaje debe tener al menos 10 caracteres.",
@@ -470,7 +552,7 @@
             "TO": "Hasta :",
             "QUANTITY": "Cantidad :",
             "TOTAL_PRICE": "Precio Total",
-            "PDF_INVOICE": "Factura PDF",
+            "PDF_INVOICE": "Facture PDF",
             "OFFER_LABEL": "Oferta"
         }
     }

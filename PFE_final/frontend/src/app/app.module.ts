@@ -1,6 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // Important for Material
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { registerLocaleData } from '@angular/common';
+import { HttpClientModule, HttpClient, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { TranslateModule, TranslateLoader, MissingTranslationHandler, MissingTranslationHandlerParams } from '@ngx-translate/core';
+import { Observable } from 'rxjs';
+import { provideCharts, withDefaultRegisterables } from 'ng2-charts';
+
+import localeAr from '@angular/common/locales/ar';
+import localeFr from '@angular/common/locales/fr';
+import localeEn from '@angular/common/locales/en';
+import localeEs from '@angular/common/locales/es';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,16 +24,16 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { TermsComponent } from './pages/terms/terms.component';
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 import { TermsAndConditionsComponent } from './pages/terms-and-conditions/terms-and-conditions.component';
-
-import { HttpClientModule, HttpClient, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { TranslateModule, TranslateLoader, MissingTranslationHandler, MissingTranslationHandlerParams } from '@ngx-translate/core';
-import { Observable } from 'rxjs';
 import { HttpLoggingInterceptor } from './core/interceptors/http-logging.interceptor';
+
+registerLocaleData(localeAr, 'ar');
+registerLocaleData(localeFr, 'fr');
+registerLocaleData(localeEn, 'en');
+registerLocaleData(localeEs, 'es');
 
 export class CustomHttpLoader implements TranslateLoader {
     constructor(private http: HttpClient) { }
     public getTranslation(lang: string): Observable<any> {
-        // Add timestamp to bust cache
         const timestamp = new Date().getTime();
         return this.http.get(`/assets/i18n/${lang}.json?v=${timestamp}`);
     }
@@ -44,8 +54,6 @@ export class CustomMissingTranslationHandler implements MissingTranslationHandle
         return params.key;
     }
 }
-
-import { provideCharts, withDefaultRegisterables } from 'ng2-charts';
 
 @NgModule({
     declarations: [

@@ -151,7 +151,71 @@
             "STATUS": "Statut",
             "ABOUT": "À propos de l'événement",
             "JOIN": "Réserver votre place",
-            "PRICE_FREE": "Entrée Gratuite"
+            "PRICE_FREE": "Entrée Gratuite",
+            "ALL_EVENTS": "Toute les Événements",
+            "ENTRY": "Entrée",
+            "PROGRAM": "Programme & Calendrier",
+            "PRACTICAL_INFO": "Informations Pratiques",
+            "ACCESS_TRANSPORT": "Accès & Transport",
+            "ACCESS_TRANSPORT_DESC": "Accessible en transport public. Bus et tramway à proximité du site.",
+            "ACCESSIBILITY": "Accessibilité",
+            "ACCESSIBILITY_DESC": "Site accessible aux personnes à mobilité réduite (PMR). Parking spécial disponible.",
+            "ENTRY_POLICY": "Politique d'Entrée",
+            "ENTRY_POLICY_DESC": "Entrée libre. Réservation en ligne recommandée pour garantir votre place.",
+            "DONT_MISS": "Ne manquez pas !",
+            "EVENT_ENDED": "Événement terminé",
+            "BOOK_DESC": "Réservez dès maintenant et vivez une expérience inoubliable à {{location}}.",
+            "ALREADY_BOOKED": "Déjà réservé",
+            "EVENT_ONGOING": "Événement en cours",
+            "STARTS_IN": "L'événement commence dans",
+            "DURATION_DAYS": "{{count}} jours",
+            "DURATION_DAY": "{{count}} jour",
+            "UNITS": {
+                "DAYS": "Jours",
+                "HOURS": "Heures",
+                "MINUTES": "Min",
+                "SECONDS": "Sec"
+            }
+        },
+        "NAMES": {
+            "Festival Gnaoua": "Festival Gnaoua",
+            "Mawazine": "Mawazine",
+            "Timitar": "Timitar",
+            "Fes Sacred Music": "Festival des Musiques Sacrées",
+            "Rose Festival": "Festival des Roses",
+            "Tanjazz": "Tanjazz",
+            "Film Festival": "Festival du Film",
+            "Cherry Festival": "Festival des Cerises",
+            "Camel Festival": "Festival des Chameaux",
+            "Sahara Marathon": "Marathon du Sahara",
+            "Imilchil Marriage": "Moussem d'Imilchil",
+            "Tan-Tan Moussem": "Moussem de Tan-Tan",
+            "Kitesurf World Cup": "Coupe du Monde de Kitesurf"
+        },
+        "TYPES": {
+            "FESTIVAL": "Festival",
+            "CULTURAL": "Culturel",
+            "MUSIC": "Musique",
+            "TRADITIONAL": "Traditionnel",
+            "EVENT": "Événement"
+        },
+        "TAGS": {
+            "MOROCCO": "#Maroc",
+            "CULTURE": "#Culture",
+            "TRAVEL": "#Voyage",
+            "FESTIVAL": "#Festival",
+            "FEAST": "#Fête",
+            "ANIMATION": "#Animation",
+            "CULTURAL": "#Culturel",
+            "HERITAGE": "#Patrimoine",
+            "ART": "#Art",
+            "MUSIC": "#Musique",
+            "CONCERT": "#Concert",
+            "LIVE": "#Live",
+            "TRADITION": "#Tradition",
+            "FOLKLORE": "#Folklore",
+            "CRAFT": "#Artisanat",
+            "EVENT": "#Événement"
         }
     },
     "AUTH": {
@@ -308,7 +372,21 @@
         "VERIFY": "Vérifier",
         "MOROCCO": "Maroc",
         "RESERVE": "Réserver",
-        "LOCATION": "Lieu"
+        "LOCATION": "Lieu",
+        "CITIES": {
+            "RABAT": "Rabat",
+            "CASABLANCA": "Casablanca",
+            "MARRAKECH": "Marrakech",
+            "FES": "Fès",
+            "FEZ": "Fès",
+            "TANGER": "Tanger",
+            "TANGIER": "Tanger",
+            "AGADIR": "Agadir",
+            "MEKNES": "Meknès",
+            "OUJDA": "Oujda",
+            "KENITRA": "Kénitra",
+            "TETOUAN": "Tétouan"
+        }
     },
     "LANG": {
         "EN": "Anglais",
@@ -317,7 +395,7 @@
         "ES": "Espagnol"
     },
     "FOOTER": {
-        "DESC": "Votre guide ultime pour découvrir la beauté, la culture et les événements du Maroc.",
+        "DESC": "Votre guide ultime pour découvrir la beauté, culture et les événements du Maroc.",
         "QUICK_LINKS": "Liens Rapides",
         "EXPLORE": "Explorer",
         "SUPPORT": "Support",
@@ -372,7 +450,7 @@
         "WHY": {
             "TAG": "Fonctionnalités",
             "TITLE": "Pourquoi choisir Safar Morocco",
-            "DESC": "Nous fournissons les meilleurs outils pour rendre votre voyage inouابل.",
+            "DESC": "Nous fournissons les meilleurs outils pour rendre votre voyage inoubliable.",
             "VERIFIED": {
                 "TITLE": "Lieux vérifiés",
                 "DESC": "Toutes les destinations sont examinées et vérifiées par notre équipe."

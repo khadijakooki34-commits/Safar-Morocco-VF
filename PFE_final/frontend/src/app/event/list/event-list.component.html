@@ -61,9 +61,9 @@
                     <div class="event-body">
                         <div class="d-flex align-items-center gap-2 mb-2">
                             <i class="bi bi-geo-alt-fill text-primary small"></i>
-                            <span class="location-text">{{ event.lieu }}</span>
+                            <span class="location-text">{{ getCityTranslationKey(event.lieu) | translate }}</span>
                         </div>
-                        <h3 class="event-title">{{ event.nom }}</h3>
+                        <h3 class="event-title">{{ 'EVENTS.NAMES.' + event.nom | translate }}</h3>
                         <p class="event-desc">{{ event.description ? (event.description | slice:0:100) + '...' : ('JOIN'
                             | translate) }}</p>
 

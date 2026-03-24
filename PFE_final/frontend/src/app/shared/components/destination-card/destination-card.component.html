@@ -21,7 +21,7 @@
 
         <h3 class="destination-title">{{destination.nom | translateValue}}</h3>
 
-        <p class="destination-description">{{ (destination.description || '') | slice:0:100 }}...</p>
+        <p class="destination-description">{{ (getDestinationDescription(destination) || '') | slice:0:100 }}...</p>
 
         <div class="card-footer-action">
             <span class="view-details-link">

@@ -14,6 +14,7 @@ import { ReservationService }  from '../../core/services/reservation.service';
 import { Offer }  from '../../core/models/offer.model';
 import { ReservationDialogComponent }  from '../dialog/reservation-dialog.component';
 import * as L from 'leaflet';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     standalone: false,
@@ -58,7 +59,8 @@ export class DestinationDetailComponent implements OnInit, AfterViewInit {
         private dialog: MatDialog,
         private sanitizer: DomSanitizer,
         private ngZone: NgZone,
-        private cdr: ChangeDetectorRef
+        private cdr: ChangeDetectorRef,
+        public translate: TranslateService
     ) {
         // INSTANT LOAD LOGIC: Check if data was passed via state
         this.ngZone.run(() => {
@@ -426,5 +428,14 @@ export class DestinationDetailComponent implements OnInit, AfterViewInit {
                 this.router.navigate(['/itineraires/detail', result.itineraryId]);
             }
         });
+    }
+
+    /** Returns translated description or fallback to backend data */
+    getDestinationDescription(): string {
+        if (!this.destination) return '';
+        const key = `DESTINATIONS.DESCRIPTION.${this.destination.nom}`;
+        const translated = this.translate.instant(key);
+        // If translate.instant returns the key, it means translation is missing
+        return translated === key ? this.destination.description : translated;
     }
 }

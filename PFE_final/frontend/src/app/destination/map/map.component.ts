@@ -4,6 +4,7 @@ import * as L from 'leaflet';
 // import 'leaflet-routing-machine'; // Loaded via angular.json scripts
 import { DestinationService } from '../../core/services/destination.service';
 import { Destination } from '../../core/models/destination.model';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-global-map',
@@ -42,7 +43,8 @@ export class DestinationMapComponent implements OnInit, AfterViewInit, OnDestroy
 
     constructor(
         private destinationService: DestinationService,
-        private ngZone: NgZone
+        private ngZone: NgZone,
+        public translate: TranslateService
     ) { }
 
     ngOnInit(): void {
@@ -257,6 +259,13 @@ export class DestinationMapComponent implements OnInit, AfterViewInit, OnDestroy
 
     closePreview(): void {
         this.selectedDestination = null;
+    }
+
+    getDestinationDescription(dest: any): string {
+        if (!dest) return '';
+        const key = `DESTINATIONS.DESCRIPTION.${dest.nom}`;
+        const translated = this.translate.instant(key);
+        return translated === key ? dest.description : translated;
     }
 
     getDirections(): void {

@@ -178,6 +178,16 @@ export class DestinationDetailComponent implements OnInit, AfterViewInit {
         return translated === translationKey ? defaultDesc : translated;
     }
 
+    formatDateFr(dateString: string): string {
+        if (!dateString) return '';
+        const date = new Date(dateString);
+        const day = date.getDate();
+        const year = date.getFullYear();
+        const months = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+        const month = months[date.getMonth()];
+        return `${day} ${month} ${year}`;
+    }
+
     loadReviews(id: number) {
         this.apiService.getReviews(id).subscribe({
             next: (data) => {

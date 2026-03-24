@@ -54,7 +54,8 @@
             "EMPTY_TITLE": "No se encontraron destinos",
             "EMPTY_DESC": "Intenta ajustar tu búsqueda o filtros",
             "RESET": "Restablecer filtros",
-            "ADD_TOOLTIP": "Añadir nuevo destino"
+            "ADD_TOOLTIP": "Añadir nuevo destino",
+            "SEARCH_TYPE_PLACEHOLDER": "Tipo (Ciudad, Desierto, Oasis...)"
         },
         "DETAIL": {
             "BREADCRUMB": "Todos los destinos",

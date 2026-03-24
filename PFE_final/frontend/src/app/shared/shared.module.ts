@@ -37,6 +37,7 @@ import { CategoryNamePipe } from './pipes/category-name.pipe';
 import { TranslateValuePipe } from './pipes/translate-value.pipe';
 import { CleanDatePipe } from './pipes/clean-date.pipe';
 import { RecommendationComponent } from './components/recommendation/recommendation.component';
+import { OfferTranslatePipe } from './pipes/offer-translate.pipe';
 
 @NgModule({
     declarations: [
@@ -51,6 +52,7 @@ import { RecommendationComponent } from './components/recommendation/recommendat
         CategoryNamePipe,
         TranslateValuePipe,
         CleanDatePipe,
+        OfferTranslatePipe,
         RecommendationComponent
     ],
     imports: [
@@ -113,7 +115,12 @@ import { RecommendationComponent } from './components/recommendation/recommendat
         CategoryNamePipe,
         TranslateValuePipe,
         CleanDatePipe,
+        OfferTranslatePipe,
         RecommendationComponent
+    ],
+    providers: [
+        TranslateValuePipe,
+        OfferTranslatePipe
     ]
 })
 export class SharedModule { }

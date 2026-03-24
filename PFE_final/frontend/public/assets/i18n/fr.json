@@ -37,7 +37,8 @@
             "EMPTY_TITLE": "Aucune destination trouvée",
             "EMPTY_DESC": "Essayez d'ajuster votre recherche ou vos filtres",
             "RESET": "Réinitialiser les Filtres",
-            "ADD_TOOLTIP": "Ajouter une Destination"
+            "ADD_TOOLTIP": "Ajouter une Destination",
+            "SEARCH_TYPE_PLACEHOLDER": "Type (Ville, Désert, Oasis...)"
         },
         "RESERVATION": {
             "TITLE": "Réserver : {{name}}",

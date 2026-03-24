@@ -55,7 +55,7 @@
                 <div class="info-icon bg-orange-soft"><i class="bi bi-cash-coin"></i></div>
                 <div class="info-text">
                     <span class="info-label">{{ 'DESTINATIONS.DETAIL.GLANCE.COST' | translate }}</span>
-                    <span class="info-value">{{ 'DESTINATIONS.DETAIL.GLANCE.CURRENCY' | translate }} {{ (destination.averageCost || '50') | number:'1.0-0' }}</span>
+                    <span class="info-value">{{ (destination.averageCost || '50') | number:'1.0-0' }} {{ 'DESTINATIONS.DETAIL.GLANCE.CURRENCY' | translate }}</span>
                 </div>
             </div>
             <div class="info-sep"></div>
@@ -303,31 +303,31 @@
                                             </div>
                                             <div class="card-body p-4 d-flex flex-column">
                                                 <div class="d-flex justify-content-between align-items-start mb-3">
-                                                    <h4 class="fw-800 mb-0 flex-grow-1">{{offer.name}}</h4>
+                                                    <h4 class="fw-800 mb-0 flex-grow-1">{{offer.name | offerTranslate}}</h4>
                                                     <div class="price-tag ms-2">
                                                         <span class="price-val">{{ (offer.displayPrice || offer.price || 0) | number:'1.0-0'}}</span>
-                                                        <span class="price-unit">MAD</span>
+                                                        <span class="price-unit">{{ 'MAD' | offerTranslate }}</span>
                                                         <small class="price-sub" *ngIf="offer.type === 'HOTEL'">{{ 'DESTINATIONS.DETAIL.OFFER_NIGHT' | translate }}</small>
                                                     </div>
                                                 </div>
                                                 
-                                                <p class="text-muted small mb-4 line-clamp-3">{{offer.description}}</p>
+                                                <p class="text-muted small mb-4 line-clamp-3">{{offer.description | offerTranslate}}</p>
                                                 
                                                 <div class="offer-specs mb-4 mt-auto">
                                                     <div class="spec-item" *ngIf="offer.stars">
                                                         <i class="bi bi-star-fill text-warning"></i> {{offer.stars}} {{ 'DESTINATIONS.DETAIL.OFFER_STARS' | translate }}
                                                     </div>
                                                     <div class="spec-item" *ngIf="offer.roomType">
-                                                        <i class="bi bi-door-open"></i> {{offer.roomType}}
+                                                        <i class="bi bi-door-open"></i> {{offer.roomType | offerTranslate}}
                                                     </div>
                                                     <div class="spec-item" *ngIf="offer.cuisineType">
-                                                        <i class="bi bi-cup-hot"></i> {{offer.cuisineType}}
+                                                        <i class="bi bi-cup-hot"></i> {{offer.cuisineType | offerTranslate}}
                                                     </div>
                                                     <div class="spec-item" *ngIf="offer.duration">
-                                                        <i class="bi bi-clock"></i> {{offer.duration}}
+                                                        <i class="bi bi-clock"></i> {{offer.duration | offerTranslate}}
                                                     </div>
                                                     <div class="spec-item" *ngIf="offer.activityType">
-                                                        <i class="bi bi-info-circle"></i> {{offer.activityType}}
+                                                        <i class="bi bi-info-circle"></i> {{offer.activityType | offerTranslate}}
                                                     </div>
                                                 </div>
 
@@ -404,7 +404,7 @@
                                                         [hidden]="i >= review.note"></i>
                                                 </div>
                                             </div>
-                                            <span class="ms-auto text-muted small">{{review.datePublication | date}}</span>
+                                            <span class="ms-auto text-muted small text-capitalize">{{formatDateFr(review.datePublication) | translateValue}}</span>
                                         </div>
                                         <p class="review-body mb-0">{{review.commentaire}}</p>
                                     </div>

@@ -37,7 +37,8 @@
             "EMPTY_TITLE": "No destinations found",
             "EMPTY_DESC": "Try adjusting your search or filters",
             "RESET": "Reset Filters",
-            "ADD_TOOLTIP": "Add New Destination"
+            "ADD_TOOLTIP": "Add New Destination",
+            "SEARCH_TYPE_PLACEHOLDER": "Type (City, Desert, Oasis...)"
         },
         "RESERVATION": {
             "TITLE": "Reserve: {{name}}",

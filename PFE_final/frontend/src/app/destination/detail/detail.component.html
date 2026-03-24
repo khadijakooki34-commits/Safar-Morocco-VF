@@ -168,7 +168,7 @@
                                                      alt="icon" style="width: 50px;">
                                                 <div class="ms-3">
                                                     <h3 class="fw-800 mb-0">{{weather.temperature | number:'1.0-0'}}°C</h3>
-                                                    <p class="mb-0 text-muted small">{{weather.description}}</p>
+                                                    <p class="mb-0 text-muted small text-capitalize">{{getWeatherCondition(weather.iconeCode, weather.description)}}</p>
                                                 </div>
                                             </div>
                                             
@@ -184,7 +184,7 @@
                                                 <h6 class="fw-700 text-secondary mb-2 small text-uppercase letter-spacing-1">{{ 'DESTINATIONS.DETAIL.WEATHER.FORECAST' | translate }}</h6>
                                                 <div class="d-flex justify-content-between overflow-auto gap-2">
                                                     <div class="text-center" *ngFor="let day of forecast">
-                                                        <p class="mb-0 smallest text-muted">{{day.datePrevision | date:'E'}}</p>
+                                                        <p class="mb-0 smallest text-muted">{{getWeatherDay(day.datePrevision)}}</p>
                                                         <img [src]="day.iconeUrl || 'http://openweathermap.org/img/wn/' + day.iconeCode + '.png'"
                                                             alt="icon" style="width: 25px;">
                                                         <p class="mb-0 smallest fw-bold">{{day.temperature | number:'1.0-0'}}°</p>

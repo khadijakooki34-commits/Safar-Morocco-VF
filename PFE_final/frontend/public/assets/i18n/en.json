@@ -83,7 +83,27 @@
                 "TITLE": "Local Weather",
                 "HUMIDITY": "Humidity",
                 "WIND": "Wind Speed",
-                "FORECAST": "7-Day Forecast"
+                "FORECAST": "7-Day Forecast",
+                "DAYS": {
+                    "0": "Sun",
+                    "1": "Mon",
+                    "2": "Tue",
+                    "3": "Wed",
+                    "4": "Thu",
+                    "5": "Fri",
+                    "6": "Sat"
+                },
+                "CONDITIONS": {
+                    "01": "Clear sky",
+                    "02": "Few clouds",
+                    "03": "Scattered clouds",
+                    "04": "Overcast",
+                    "09": "Shower rain",
+                    "10": "Rain",
+                    "11": "Thunderstorm",
+                    "13": "Snow",
+                    "50": "Mist"
+                }
             },
             "GLANCE": {
                 "TITLE": "At a Glance",

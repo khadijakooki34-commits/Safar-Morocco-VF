@@ -84,7 +84,27 @@
                 "TITLE": "Météo Locale",
                 "HUMIDITY": "Humidité",
                 "WIND": "Vitesse du vent",
-                "FORECAST": "Prévisions sur 7 jours"
+                "FORECAST": "Prévisions sur 7 jours",
+                "DAYS": {
+                    "0": "Dim",
+                    "1": "Lun",
+                    "2": "Mar",
+                    "3": "Mer",
+                    "4": "Jeu",
+                    "5": "Ven",
+                    "6": "Sam"
+                },
+                "CONDITIONS": {
+                    "01": "Ciel dégagé",
+                    "02": "Peu nuageux",
+                    "03": "Nuageux",
+                    "04": "Couvert",
+                    "09": "Averses",
+                    "10": "Pluie",
+                    "11": "Orage",
+                    "13": "Neige",
+                    "50": "Brouillard"
+                }
             },
             "GLANCE": {
                 "TITLE": "En un coup d'œil",

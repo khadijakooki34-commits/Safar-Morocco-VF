@@ -83,7 +83,27 @@
                 "TITLE": "Clima local",
                 "HUMIDITY": "Humedad",
                 "WIND": "Velocidad del viento",
-                "FORECAST": "Pronóstico de 7 días"
+                "FORECAST": "Pronóstico de 7 días",
+                "DAYS": {
+                    "0": "Dom",
+                    "1": "Lun",
+                    "2": "Mar",
+                    "3": "Mié",
+                    "4": "Jue",
+                    "5": "Vie",
+                    "6": "Sáb"
+                },
+                "CONDITIONS": {
+                    "01": "Cielo despejado",
+                    "02": "Pocas nubes",
+                    "03": "Nubes dispersas",
+                    "04": "Nublado",
+                    "09": "Aguaceros",
+                    "10": "Lluvia",
+                    "11": "Tormenta",
+                    "13": "Nieve",
+                    "50": "Niebla"
+                }
             },
             "GLANCE": {
                 "TITLE": "De un vistazo",

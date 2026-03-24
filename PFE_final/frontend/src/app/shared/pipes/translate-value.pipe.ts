@@ -87,6 +87,38 @@ export class TranslateValuePipe implements PipeTransform {
             'nature': 'طبيعة',
             'historical': 'تاريخي',
             'religious': 'ديني'
+        },
+        'en': {
+            'janvier': 'January', 'février': 'February', 'fevrier': 'February', 'mars': 'March',
+            'avril': 'April', 'mai': 'May', 'juin': 'June',
+            'juillet': 'July', 'août': 'August', 'aout': 'August', 'septembre': 'September',
+            'octobre': 'October', 'novembre': 'November', 'décembre': 'December', 'decembre': 'December',
+            'oct': 'Oct', 'nov': 'Nov', 'dec': 'Dec',
+            'arabe': 'Arabic', 'français': 'French', 'francais': 'French',
+            'tashelhit': 'Tashelhit', 'amazigh': 'Amazigh',
+            'anglais': 'English', 'espagnol': 'Spanish',
+            'darija': 'Darija', 'berbère': 'Berber', 'berbere': 'Berber',
+            'cultural': 'Cultural', 'nature': 'Nature', 'historical': 'Historical', 'religious': 'Religious'
+        },
+        'es': {
+            'janvier': 'Enero', 'février': 'Febrero', 'fevrier': 'Febrero', 'mars': 'Marzo',
+            'avril': 'Abril', 'mai': 'Mayo', 'juin': 'Junio',
+            'juillet': 'Julio', 'août': 'Agosto', 'aout': 'Agosto', 'septembre': 'Septiembre',
+            'octobre': 'Octubre', 'novembre': 'Noviembre', 'décembre': 'Diciembre', 'decembre': 'Diciembre',
+            'oct': 'Oct', 'nov': 'Nov', 'dec': 'Dic',
+            'arabe': 'Árabe', 'français': 'Francés', 'francais': 'Francés',
+            'tashelhit': 'Tashelhit', 'amazigh': 'Amazigh',
+            'anglais': 'Inglés', 'espagnol': 'Español',
+            'darija': 'Darija', 'berbère': 'Bereber', 'berbere': 'Bereber',
+            'cultural': 'Cultural', 'nature': 'Naturaleza', 'historical': 'Histórico', 'religious': 'Religioso'
+        },
+        'fr': {
+            'january': 'janvier', 'february': 'février', 'march': 'mars',
+            'april': 'avril', 'may': 'mai', 'june': 'juin',
+            'july': 'juillet', 'august': 'août', 'september': 'septembre',
+            'october': 'octobre', 'november': 'novembre', 'december': 'décembre',
+            'arabic': 'arabe', 'french': 'français', 'english': 'anglais', 'spanish': 'espagnol',
+            'berber': 'berbère'
         }
     };
 

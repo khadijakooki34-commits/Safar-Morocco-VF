@@ -164,6 +164,20 @@ export class DestinationDetailComponent implements OnInit, AfterViewInit {
         }
     }
 
+    getWeatherDay(dateString: string): string {
+        if (!dateString) return '';
+        const dayIndex = new Date(dateString).getDay();
+        return this.translate.instant(`DESTINATIONS.DETAIL.WEATHER.DAYS.${dayIndex}`);
+    }
+
+    getWeatherCondition(iconeCode: string, defaultDesc: string): string {
+        if (!iconeCode) return defaultDesc;
+        const code = iconeCode.substring(0, 2);
+        const translationKey = `DESTINATIONS.DETAIL.WEATHER.CONDITIONS.${code}`;
+        const translated = this.translate.instant(translationKey);
+        return translated === translationKey ? defaultDesc : translated;
+    }
+
     loadReviews(id: number) {
         this.apiService.getReviews(id).subscribe({
             next: (data) => {

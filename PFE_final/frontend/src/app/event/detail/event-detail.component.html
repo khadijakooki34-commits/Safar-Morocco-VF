@@ -71,8 +71,7 @@
         <!-- ═══════════════════════ ABOUT ═════════════════════════════ -->
         <section class="ed-card">
           <h2 class="ed-card__title"><i class="bi bi-info-circle-fill"></i> {{ 'EVENTS.DETAIL.ABOUT' | translate }}</h2>
-          <p class="ed-card__body" *ngIf="event.historique">{{ event.historique }}</p>
-          <p class="ed-card__body" *ngIf="!event.historique">{{ event.description }}</p>
+          <p class="ed-card__body">{{ getEventHistory() }}</p>
           <div class="ed-tags">
             <span class="ed-tag" *ngFor="let tagKey of getEventTagsKeys()">{{ tagKey | translate }}</span>
           </div>

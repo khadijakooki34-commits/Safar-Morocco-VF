@@ -116,6 +116,13 @@ export class EventListComponent implements OnInit {
         return `COMMON.CITIES.${key}`;
     }
 
+    getEventHistory(event: any): string {
+        if (!event) return '';
+        const key = `EVENTS.HISTORIQUE.${event.nom}`;
+        const translated = this.translate.instant(key);
+        return translated === key ? (event.historique || event.description || '') : translated;
+    }
+
     get currentLang(): string {
         return this.translate.currentLang || 'fr';
     }

@@ -226,6 +226,15 @@ export class EventDetailComponent implements OnInit, OnDestroy {
         return map[(this.event?.eventType || '').toUpperCase()] || 'bi-calendar-event';
     }
 
+    /** Returns translated history or fallback to backend data */
+    getEventHistory(): string {
+        if (!this.event) return '';
+        const key = `EVENTS.HISTORIQUE.${this.event.nom}`;
+        const translated = this.translate.instant(key);
+        // If translate.instant returns the key, it means translation is missing
+        return translated === key ? (this.event.historique || this.event.description) : translated;
+    }
+
     /** Starts a real-time countdown to dateDebut */
     startCountdown(): void {
         if (this.countdownInterval) clearInterval(this.countdownInterval);

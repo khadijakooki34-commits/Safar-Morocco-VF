@@ -190,7 +190,26 @@
             "Sahara Marathon": "Sahara Marathon",
             "Imilchil Marriage": "Imilchil Marriage Festival",
             "Tan-Tan Moussem": "Tan-Tan Moussem",
-            "Kitesurf World Cup": "Kitesurf World Cup"
+            "Kitesurf World Cup": "Kitesurf World Cup",
+            "Cedar Festival": "Cedar Festival",
+            "FICAM Meknes": "FICAM Meknes"
+        },
+        "HISTORIQUE": {
+            "Festival Gnaoua": "The Essaouira Gnaoua and World Music Festival is a musical event that blends traditional Gnaoua music with contemporary musical styles from around the world, creating a unique cultural experience in the historic city of Essaouira.",
+            "Mawazine": "Mawazine — Rhythms of the World was founded in 2001 by the Maroc Cultures Foundation as a festival aimed at opening Morocco to the global music scene. From its modest beginnings, it has become one of the world's largest music festivals in terms of attendance, welcoming several million spectators each year across multiple free stages in Rabat. This festival symbolizes Morocco's cultural openness and its ambition to position itself as a crossroads of cultures between Africa, the Arab world, and the West. Over the years, Mawazine has hosted legendary artists such as Rihanna, Stevie Wonder, and Elton John, making the Moroccan capital a top-tier international music destination.",
+            "Timitar": "The Timitar festival in Agadir celebrates Amazigh culture through music and art, and serves as a bridge of communication between Amazigh artists and their counterparts from different parts of the world.",
+            "Fes Sacred Music": "The Fes Festival of World Sacred Music combines spirituality and art, where musicians from different religions and cultures meet to promote the values of peace and tolerance.",
+            "Rose Festival": "The Rose Festival in Kelaat M'Gouna is an annual celebration of the rose harvest season, highlighting the region's cultural heritage and promoting local rose-derived products.",
+            "Tanjazz": "The Tanjazz festival is an annual rendezvous for jazz lovers, bringing together great international artists in the charming spaces of the city of Tangier, bringing an atmosphere of sophistication and creativity.",
+            "Film Festival": "The Marrakech International Film Festival is one of the world's most prominent film festivals, attracting movie stars and filmmakers from around the globe to honor the seventh art.",
+            "Cherry Festival": "The Cherry Festival in Sefrou is the oldest festival in Morocco, celebrating the cherry harvest season and characterized by the election of Miss Cherry in a traditional festive atmosphere.",
+            "Camel Festival": "The Camel Moussem in Guelmim is a cultural and economic manifestation that highlights the Saharan heritage and the bedouin's relationship with the camel, with the organization of races and folk performances.",
+            "Sahara Marathon": "The Sahara Marathon in Dakhla is a global sporting challenge that brings together runners of different nationalities to compete in the heart of the Moroccan Sahara sands and within its picturesque nature.",
+            "Imilchil Marriage": "The Imilchil Moussem is a unique social and cultural event that embodies the traditions of the High Atlas tribes in choosing life partners, and attracts visitors to discover the region's authenticity.",
+            "Tan-Tan Moussem": "The Tan-Tan Moussem, classified by UNESCO as intangible world heritage, is a major cultural event that brings together desert tribes to celebrate their ancestral traditions and customs.",
+            "Kitesurf World Cup": "The Dakhla Kitesurf World Cup is a major global stop that attracts the best competitors in this water sport, taking advantage of Dakhla's exceptional natural conditions.",
+            "Cedar Festival": "The Ifrane Cedar Festival celebrates the Middle Atlas cedar forest, one of the most precious forest ecosystems in North Africa, a refuge for the iconic Barbary macaque. Ifrane, nicknamed the 'Switzerland of Morocco' for its snowy alpine landscapes, is the natural guardian of these thousand-year-old forests, some of whose trees, like the legendary Gouraud Cedar, are over 800 years old. The festival raises awareness among visitors and young Moroccans about the conservation of this ecosystem threatened by global warming and human activities, while celebrating the unique beauty of the Middle Atlas through guided hikes, scientific exhibitions, and Amazigh cultural events.",
+            "FICAM Meknes": "The Meknes International Animation Film Festival (FICAM) is the only African festival entirely dedicated to animation cinema and has become an unmissable event for professionals and amateurs of the 7th animated art. Created in the imperial city of Meknes, one of the four historic capitals of Morocco, FICAM brings together studios, directors, and students from all over the world every year for screenings, masterclasses, and creative workshops. Its vocation is to stimulate the emergence of a Moroccan and African animation industry, encouraging young talents to tell their stories with contemporary digital tools while drawing on the richness of the visual and narrative traditions of the Arab and Berber worlds."
         },
         "TYPES": {
             "FESTIVAL": "Festival",
@@ -385,7 +404,29 @@
             "MEKNES": "Meknes",
             "OUJDA": "Oujda",
             "KENITRA": "Kenitra",
-            "TETOUAN": "Tetouan"
+            "TETOUAN": "Tetouan",
+            "CHEFCHAOUEN": "Chefchaouen",
+            "OUARZAZATE": "Ouarzazate",
+            "ERRACHIDIA": "Errachidia",
+            "AZILAL": "Azilal",
+            "TINGHIR": "Tinghir",
+            "BOUMALNE_DADES": "Boumalne Dades",
+            "ESSAOUIRA": "Essaouira",
+            "KELAAT_MGOUNA": "Kelaat Mgouna",
+            "SEFROU": "Sefrou",
+            "GUELMIM": "Guelmim",
+            "LAAYOUNE": "Laayoune",
+            "IMILCHIL": "Imilchil",
+            "DAKHLA_LAGOON": "Dakhla Lagoon",
+            "DAKHLA": "Dakhla",
+            "AL_HOCEIMA": "Al Hoceima",
+            "OUALIDIA": "Oualidia",
+            "AZROU": "Azrou",
+            "ASILAH": "Asilah",
+            "BERKANE": "Berkane",
+            "TAN-TAN": "Tan-Tan",
+            "TAN_TAN": "Tan-Tan",
+            "IFRANE": "Ifrane"
         }
     },
     "LANG": {

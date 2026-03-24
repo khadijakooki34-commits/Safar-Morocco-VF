@@ -190,7 +190,26 @@
             "Sahara Marathon": "Maratón del Sahara",
             "Imilchil Marriage": "Moussem de Imilchil",
             "Tan-Tan Moussem": "Moussem de Tan-Tan",
-            "Kitesurf World Cup": "Copa del Mundo de Kitesurf"
+            "Kitesurf World Cup": "Copa del Mundo de Kitesurf",
+            "Cedar Festival": "Festival del Cedro",
+            "FICAM Meknes": "FICAM Meknes"
+        },
+        "HISTORIQUE": {
+            "Festival Gnaoua": "El Festival Gnaoua y Músicas del Mundo de Essaouira es una encrucijada cultural única que celebra la herencia musical ancestral de los Gnaouas, abriéndola a sonidos del jazz, rock y música contemporánea mundial. Organizado anualmente en la 'Ciudad de los Alisios', este festival transforma Essaouira en un vasto espacio de diálogo intercultural y fusión musical espontánea.",
+            "Mawazine": "Mawazine — Ritmos del Mundo nació en 2001 bajo el impulso de la Fundación Maroc Cultures como un festival destinado a abrir Marruecos a los grandes escenarios musicales del mundo. Desde sus modestos comienzos, se ha convertido en uno de los festivales de música más grandes del mundo en términos de asistencia, acogiendo cada año a varios millones de espectadores en varios escenarios gratuitos en Rabat. Este festival simboliza la apertura cultural de Marruecos y su ambición de posicionarse como un cruce de culturas entre África, el mundo árabe y Occidente. A lo largo de las ediciones, Mawazine ha acogido a artistas legendarios como Rihanna, Stevie Wonder y Elton John, convirtiendo a la capital cherifiana en un escenario musical internacional de primer nivel.",
+            "Timitar": "Timitar, que significa \"signos\" en tamazight, nació en 2004 en Agadir para celebrar la riqueza de la cultura amazigh y su lugar en el corazón de la identidad marroquí. Creado por la asociación Souss Culture, se ha convertido en una de las grandes citas culturales del país, reuniendo a artistas bereberes de Marruecos, Argelia, Libia y la diáspora mundial. Este festival encarna el renacimiento cultural amazigh impulsado por la consagración constitucional de la lengua tamazight en 2011. Honra las músicas del Souss, del Atlas y del desierto, rindiendo homenaje a artistas emblemáticos como Izenzaren, Biyoull y Ammouri Mbarek.",
+            "Fes Sacred Music": "El Festival de Fez de Músicas Sagradas del Mundo fue fundado en 1994 por Faouzi Skali, intelectual sufí e investigador, con la convicción de que la música espiritual puede ser un poderoso vector de paz y diálogo entre las civilizaciones. Organizado en el marco único de la ciudad imperial de Fez, cuna del sufismo marroquí, reúne cada año a místicos, músicos y pensadores de todas las tradiciones religiosas: islam, cristianismo, judaísmo, budismo e hinduismo. Es un festival del alma que transforma los jardines y palacios de Fez en espacios de meditación colectiva. Hoy en día es reconocido como uno de los festivales de música más importantes del mundo.",
+            "Rose Festival": "El Festival de las Rosas de Kelâat M'Gouna es una celebración anual que honra la floración de las rosas de Damasco (Rosa damascena), cultivadas en el valle del Dadès desde hace siglos. La tradición cuenta que estas preciosas rosas fueron traídas de Siria por peregrinos que regresaban de La Meca, implantándose de forma duradera en los jardines amazigh del valle. Cada primavera, cuando las rosas florecen formando una alfombra fragante rosa y roja, los habitantes las cosechan al amanecer para extraer la preciada agua de rosas y el aceite esencial que se exporta a todo el mundo. El festival celebra este saber hacer ancestral con desfiles, espectáculos folclóricos, la elección de la Reina de las Rosas y veladas musicales que unen tradición y modernidad.",
+            "Tanjazz": "Tanjazz nació en 2000 en Tánger, ciudad encrucijada entre Europa y África, puente cultural por excelencia que ha inspirado a generaciones de artistas, escritores y músicos de todo el mundo. El festival celebra el jazz y sus derivados (blues, soul, world music) en una ciudad que siempre ha sido un crisol de influencias mediterráneas, africanas y atlánticas. Tánger, que ha acogido a figuras como Paul Bowles y Jimi Hendrix, ofrece un marco romántico junto al mar para conciertos en calles empedradas, jardines y en el paseo marítimo. Tanjazz se ha convertido en el símbolo musical del renacimiento cultural de Tánger como metrópoli del norte de Marruecos.",
+            "Film Festival": "El Festival Internacional de Cine de Marrakech (FIFM) fue fundado en 2001 bajo el alto patronazgo del Rey Mohammed VI con el objetivo de convertir a Marrakech en una capital mundial del cine. Organizado cada año en la Ciudad Ocre, reúne a directores, actores y productores de los cinco continentes en el entorno único de los palacios y la plaza Jemaa el-Fnaa. El festival otorga la Estrella de Oro a películas excepcionales y rinde homenaje a leyendas del cine como Martin Scorsese, Clint Eastwood y Francis Ford Coppola. Contribuye al desarrollo de una industria cinematográfica marroquí dinámica y a la promoción de Marrakech como destino cultural de clase mundial.",
+            "Cherry Festival": "El Festival de las Cerezas de Sefrou es una de las celebraciones agrícolas más antiguas de Marruecos, organizada desde 1920 para coincidir con la madurez de los cerezos que rodean la ciudad jardín al pie del Atlas Medio. Sefrou, apodada la \"ciudad jardín\" por sus exuberantes huertos irrigados por los manantiales del río Aggaï, siempre ha sido un granero de frutas y verduras de la región de Fez. Durante el festival, la ciudad elige a una Reina de las Cerezas, organiza desfiles folclóricos bereberes, conciertos de música andalusí y mercados artesanales que recuerdan la riqueza de la convivencia multicultural que ha caracterizado a Sefrou, antigua ciudad de coexistencia entre amazighs, árabes y judíos marroquíes.",
+            "Camel Festival": "El Festival del Camello de Guelmim es una celebración de la herencia nómada sahariana que se celebra en la \"Puerta del Sáhara\", encrucijada histórica de las caravanas transaharianas desde hace milenios. El camello, apodado el \"barco del desierto\", está en el corazón de la cultura hassani y de las tribus nómadas del Sáhara Occidental. El festival destaca los camellos de carreras, los camellos de monta y las artes ecuestres saharianas a través de carreras espectaculares, exposiciones y demostraciones de fantasía. También es una celebración de la música gnaoua, las poesías hassaníes y las danzas tradicionales que transmiten a las generaciones jóvenes el alma profunda del desierto marroquí.",
+            "Sahara Marathon": "El Maratón del Sáhara organizado en El Aaiún celebra la solidaridad y la resistencia humana en uno de los entornos más exigentes del planeta: las extensiones áridas del Sáhara marroquí. Inspirado en el famoso Maratón de las Arenas, este evento reúne a corredores de todo el mundo que desafían las dunas, los vientos cálidos y las temperaturas extremas para superar sus límites físicos y mentales. El maratón es también un acto de solidaridad: una parte de los ingresos se destina sistemáticamente a asociaciones locales que apoyan a las poblaciones saharauis. Correr en estos paisajes infinitos de arena dorada es una experiencia espiritual y humana única en el corazón del gran desierto atlántico.",
+            "Imilchil Marriage": "El Moussem de los Compromisos de Imilchil, también llamado Moussem de Had Imilchil, es un festival nupcial único en el mundo arraigado en la trágica leyenda de Tislit e Isli, dos jóvenes amantes de tribus rivales Aït Haddidou cuyas lágrimas habrían dado origen a los lagos gemelos del Alto Atlas. Para conmemorar este amor imposible, las tribus bereberes decidieron organizar cada otoño un gran encuentro donde los jóvenes solteros podían conocerse libremente y elegir a su futuro cónyuge, trascendiendo así las rivalidades tribales. Este moussem único continúa hoy perpetuando las tradiciones de vestimenta, musicales y sociales de los Aït Haddidou y reúne a miles de participantes en torno a un ritual de compromiso colectivo en el corazón de las salvajes montañas del Atlas.",
+            "Tan-Tan Moussem": "El Moussem de Tan-Tan es uno de los mayores encuentros nómadas del mundo, clasificado en 2005 por la UNESCO como Obra Maestra del Patrimonio Oral e Inmaterial de la Humanidad. Organizado en Tan-Tan, ciudad puerta entre Marruecos y Maritania, reúne cada dos años a decenas de miles de representantes de las tribus nómadas saharauis de todo el Sáhara atlántico. Este moussem tradicional perpetúa las tradiciones del nomadismo hassani: carreras de camellos, fantasía, poesía oral hassani (lghna), fabricación de tiendas tradicionales y ritos de jefatura tribal. Es un testimonio vivo y vibrante de la cultura nómada del gran Sáhara que Tan-Tan pretende preservar para las futuras generaciones.",
+            "Kitesurf World Cup": "La Copa del Mundo de Kitesurf de Dakhla es uno de los eventos deportivos náuticos más espectaculares del mundo, organizado en la laguna de Dakhla, un sitio natural excepcional formado por una península de 40 km bañada por las aguas turquesas del Atlántico. Dakhla, con el soplo constante del Alisio que sopla sin descanso sobre la laguna, es reconocida desde los años 2000 como uno de los mejores spots de kitesurf y windsurf del planeta. Esta competición reúne a la élite mundial de la disciplina para actuaciones acrobáticas asombrosas en una masa de agua de una belleza impresionante. La Copa del Mundo simboliza también la transformación exitosa de Dakhla en un destino deportivo y turístico internacional de primer nivel.",
+            "Cedar Festival": "El Festival del Cedro de Ifrane celebra el bosque de cedros del Atlas Medio, uno de los ecosistemas forestales más valiosos del norte de África, refugio del emblemático macaco de Berbería. Ifrane, apodada la 'Suiza de Marruecos' por sus paisajes alpinos nevados, es la guardiana natural de estos bosques milenarios cuyos árboles, como el legendario cedro de Gouraud, tienen más de 800 años. El festival fometna la concienciación entre visitantes y jóvenes marroquíes sobre la conservación de este ecosistema amenazado por el calentamiento global y las actividades humanas, al tiempo que celebra la belleza única del Atlas Medio a través de excursiones guiadas, exposiciones científicas y eventos culturales amazighs.",
+            "FICAM Meknes": "El Festival Internacional de Cine de Animación de Meknes (FICAM) es el único festival africano dedicado por completo al cine de animación y se ha convertido en un evento ineludible para profesionales y aficionados al séptimo arte animado. Creado en la ciudad imperial de Meknes, una de las cuatro capitales históricas de Marruecos, FICAM reúne cada año a estudios, directores y estudiantes de todo el mundo para proyecciones, clases magistrales y talleres creativos. Su vocación es estimular el surgimiento de una industria de animación marroquí y africana, animando a los jóvenes talentos a contar sus historias con herramientas digitales contemporáneas basándose en la riqueza de las tradiciones visuales y narrativas de los mundos árabe y bereber."
         },
         "TYPES": {
             "FESTIVAL": "Festival",
@@ -382,7 +401,29 @@
             "MEKNES": "Mequinez",
             "OUJDA": "Oujda",
             "KENITRA": "Kenitra",
-            "TETOUAN": "Tetuán"
+            "TETOUAN": "Tetuán",
+            "CHEFCHAOUEN": "Chauen",
+            "OUARZAZATE": "Ouarzazate",
+            "ERRACHIDIA": "Er-Rachidía",
+            "AZILAL": "Azilal",
+            "TINGHIR": "Tinghir",
+            "BOUMALNE_DADES": "Boumalne Dades",
+            "ESSAOUIRA": "Esauira",
+            "KELAAT_MGOUNA": "Kalaat M'Gouna",
+            "SEFROU": "Sefrou",
+            "GUELMIM": "Guelmim",
+            "LAAYOUNE": "El Aaiún",
+            "IMILCHIL": "Imilchil",
+            "DAKHLA_LAGOON": "Dakhla",
+            "DAKHLA": "Dakhla",
+            "AL_HOCEIMA": "Alhucemas",
+            "OUALIDIA": "Oualidia",
+            "AZROU": "Azrou",
+            "ASILAH": "Arcila",
+            "BERKANE": "Berkane",
+            "TAN-TAN": "Tan-Tan",
+            "TAN_TAN": "Tan-Tan",
+            "IFRANE": "Ifrane"
         }
     },
     "LANG": {
@@ -551,7 +592,7 @@
             "FROM": "Desde :",
             "TO": "Hasta :",
             "QUANTITY": "Cantidad :",
-            "TOTAL_PRICE": "Precio Total",
+            "FOOTER_TOTAL_PRICE": "Precio Total",
             "PDF_INVOICE": "Facture PDF",
             "OFFER_LABEL": "Oferta"
         }

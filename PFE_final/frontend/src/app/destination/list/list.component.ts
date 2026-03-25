@@ -48,10 +48,16 @@ export class DestinationListComponent implements OnInit {
             // If we have type parameter, resolve the currentFilter
             if (this.selectedType) {
                 const lowerType = this.selectedType.toLowerCase();
-                if (lowerType.includes('cultur')) this.currentFilter = 'Cultural';
-                else if (lowerType.includes('natur')) this.currentFilter = 'Nature';
-                else if (lowerType.includes('histor')) this.currentFilter = 'Historical';
-                else if (lowerType.includes('religi')) this.currentFilter = 'Religious';
+                let categoryMatched = false;
+                if (lowerType.includes('cultur')) { this.currentFilter = 'Cultural'; categoryMatched = true; }
+                else if (lowerType.includes('natur')) { this.currentFilter = 'Nature'; categoryMatched = true; }
+                else if (lowerType.includes('histor')) { this.currentFilter = 'Historical'; categoryMatched = true; }
+                else if (lowerType.includes('religi')) { this.currentFilter = 'Religious'; categoryMatched = true; }
+
+                if (categoryMatched) {
+                    // Clear selectedType so it doesn't double-filter on the `type` field which is for locations, not categories
+                    this.selectedType = '';
+                }
             }
 
             // Apply filters if data is already loaded

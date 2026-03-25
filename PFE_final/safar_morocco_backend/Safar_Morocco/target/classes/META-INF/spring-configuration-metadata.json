@@ -1,0 +1,32 @@
+{
+  "groups": [
+    {
+      "name": "jwt",
+      "type": "ma.safar.morocco.config.JwtConfig",
+      "sourceType": "ma.safar.morocco.config.JwtConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "jwt.expiration",
+      "type": "java.lang.Long",
+      "sourceType": "ma.safar.morocco.config.JwtConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "jwt.refresh-expiration",
+      "type": "java.lang.Long",
+      "sourceType": "ma.safar.morocco.config.JwtConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "jwt.secret",
+      "type": "java.lang.String",
+      "sourceType": "ma.safar.morocco.config.JwtConfig"
+    }
+  ],
+  "hints": [],
+  "ignored": {
+    "properties": []
+  }
+}

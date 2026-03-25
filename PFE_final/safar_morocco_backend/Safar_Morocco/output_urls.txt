@@ -1,0 +1,27 @@
+Marrakech: https://images.unsplash.com/photo-1548013146-72479768bada
+Chefchaouen: https://images.unsplash.com/photo-1576189679621-e37456bc3ea4
+Jemaa el-Fnaa: /uploads/marrakech.jpg
+Hassan II Mosque: /uploads/casablanca.jpg
+Ait Ben Haddou: /uploads/aitbenhaddou.jpg
+Merzouga Desert: /uploads/merzouga.jpg
+Ouzoud Waterfalls: /uploads/ouzoud.jpg
+Fes El Bali: /uploads/fes.jpg
+Todgha Gorges: /uploads/todgha.jpg
+Dades Valley: /uploads/dades.jpg
+Essaouira Medina: /uploads/essaouira.jpg
+Rabat City Center: /uploads/rabat.jpg
+Agadir Beach: /uploads/agadir.jpg
+Kelaat Mgouna: /uploads/kelaat.jpg
+Sefrou City: /uploads/sefrou.jpg
+Guelmim Gate: /uploads/guelmim.jpg
+Laayoune City: /uploads/laayoune.jpg
+Imilchil Village: /uploads/imilchil.jpg
+Dakhla Lagoon: /uploads/dakhla.jpg
+Al Hoceima Bay: /uploads/alhoceima.jpg
+Bin El Ouidane Lake: /uploads/binelouidane.jpg
+Oualidia Lagoon: /uploads/oualidia.jpg
+Azrou Cedar Forest: /uploads/azrou.jpg
+Hercules Caves: /uploads/hercules.jpg
+Oukaimeden Resort: None
+Saidia Beach: /uploads/saidia.jpg
+Asilah Old Town: /uploads/asilah.jpg

@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
 import { BaseChartDirective } from 'ng2-charts';
+import { BidiModule } from '@angular/cdk/bidi';
 
 import { AdminLayoutComponent } from './layout/layout.component';
 import { AdminDashboardComponent } from './dashboard/dashboard.component';
@@ -94,7 +95,8 @@ const routes: Routes = [
         MatCardModule,
         MatMenuModule,
         SharedModule,
-        BaseChartDirective
+        BaseChartDirective,
+        BidiModule
     ]
 })
 export class AdminModule { }

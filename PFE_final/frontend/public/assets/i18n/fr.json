@@ -716,5 +716,44 @@
             "PDF_INVOICE": "Facture PDF",
             "OFFER_LABEL": "Offre"
         }
+    },
+    "help_center": {
+        "title": "Centre d'Aide",
+        "welcome_title": "Bienvenue sur le Centre d'Aide de Safar Morocco",
+        "welcome_desc": "Tout ce que vous devez savoir sur l'utilisation de notre plateforme.",
+        "navigate_title": "Comment Naviguer sur la Plateforme",
+        "navigate_desc": "Notre plateforme est conçue pour être intuitive. Utilisez la barre de navigation pour explorer les destinations, trouver les événements à venir ou afficher vos itinéraires personnalisés sur la carte interactive.",
+        "itineraries_title": "Création d'Itinéraires",
+        "itineraries_desc": "Allez dans la section \"Itinéraires\" pour commencer à planifier votre voyage. Vous pouvez ajouter des destinations, définir des dates et organiser facilement vos activités quotidiennes.",
+        "events_title": "Réservation d'Événements",
+        "events_desc": "Découvrez les festivals locaux, les ateliers et les visites dans la section \"Événements\". Sélectionnez simplement un événement et suivez le processus de réservation pour garantir votre place.",
+        "reservations_title": "Gestion des Réservations",
+        "reservations_desc": "Accédez à votre profil pour voir et gérer toutes vos réservations actives, vos anciens voyages et vos destinations enregistrées."
+    },
+    "terms_of_service": {
+        "title": "Conditions d'Utilisation",
+        "acceptance_title": "1. Acceptation des Conditions",
+        "acceptance_desc": "En accédant et en utilisant Safar Morocco, vous acceptez d'être lié par les présentes Conditions d'Utilisation et par toutes les lois et réglementations applicables.",
+        "license_title": "2. Licence d'Utilisation",
+        "license_desc": "L'autorisation est accordée de télécharger temporairement une copie du matériel sur le site Web de Safar Morocco pour une visualisation transitoire personnelle et non commerciale uniquement.",
+        "usage_title": "3. Utilisation de la Plateforme",
+        "usage_desc": "Les utilisateurs sont responsables de maintenir la confidentialité de leurs comptes et de toutes les activités qui se produisent sous leur compte.",
+        "content_title": "4. Contenu",
+        "content_desc": "Les utilisateurs peuvent publier des avis et des photos. En ce faisant, vous accordez à Safar Morocco une licence non exclusive et libre de droits pour utiliser, reproduire et afficher ce contenu.",
+        "modifications_title": "5. Modifications",
+        "modifications_desc": "Safar Morocco peut réviser ces conditions d'utilisation de son site Web à tout moment sans préavis."
+    },
+    "privacy_policy": {
+        "title": "Politique de Confidentialité",
+        "collection_title": "1. Collecte des Informations",
+        "collection_desc": "Nous collectons les informations que vous nous fournissez directement, par exemple lorsque vous créez un compte, effectuez une réservation ou nous contactez pour obtenir de l'aide.",
+        "use_title": "2. Utilisation des Informations",
+        "use_desc": "Nous utilisons les informations que nous collectons pour fournir, maintenir et améliorer nos services, y compris le traitement de vos réservations et l'envoi de mises à jour de voyage.",
+        "handling_title": "3. Traitement des Données",
+        "handling_desc": "Les détails de votre réservation et vos informations personnelles sont traités avec la plus stricte confidentialité et ne sont partagés qu'avec des partenaires pertinents (comme les organisateurs d'événements) pour faciliter vos réservations.",
+        "reviews_title": "4. Avis et Évaluations",
+        "reviews_desc": "Les avis publics et les évaluations que vous fournissez seront visibles par les autres utilisateurs de la plateforme pour les aider à prendre des décisions de voyage éclairées.",
+        "security_title": "5. Sécurité",
+        "security_desc": "Nous mettons en œuvre diverses mesures de sécurité pour maintenir la sécurité de vos informations personnelles lorsque vous entrez, soumettez ou accédez à vos informations personnelles."
     }
 }

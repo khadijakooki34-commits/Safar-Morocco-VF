@@ -706,5 +706,44 @@
             "PDF_INVOICE": "Facture PDF",
             "OFFER_LABEL": "Oferta"
         }
+    },
+    "help_center": {
+        "title": "Centro de Ayuda",
+        "welcome_title": "Bienvenido al Centro de Ayuda de Safar Morocco",
+        "welcome_desc": "Todo lo que necesita saber sobre el uso de nuestra plataforma.",
+        "navigate_title": "Cómo Navegar por la Plataforma",
+        "navigate_desc": "Nuestra plataforma está diseñada para ser intuitiva. Use la barra de navegación para explorar destinos, encontrar próximos eventos o ver sus itinerarios personalizados en el mapa interactivo.",
+        "itineraries_title": "Creación de Itinerarios",
+        "itineraries_desc": "Vaya a la sección \"Itinerarios\" para comenzar a planificar su viaje. Puede agregar destinos, establecer fechas y organizar sus actividades diarias fácilmente.",
+        "events_title": "Reserva de Eventos",
+        "events_desc": "Descubra festivales locales, talleres y recorridos en la sección \"Eventos\". Simplemente seleccione un evento y siga el proceso de reserva para asegurar su lugar.",
+        "reservations_title": "Gestión de Reservas",
+        "reservations_desc": "Acceda a su perfil para ver y administrar todas sus reservas activas, viajes anteriores y destinos guardados."
+    },
+    "terms_of_service": {
+        "title": "Términos de Servicio",
+        "acceptance_title": "1. Aceptación de los Términos",
+        "acceptance_desc": "Al acceder y utilizar Safar Morocco, acepta estar sujeto a estos Términos de Servicio y a todas las leyes y regulaciones aplicables.",
+        "license_title": "2. Licencia de Uso",
+        "license_desc": "Se otorga permiso para descargar temporalmente una copia de los materiales en el sitio web de Safar Morocco únicamente para visualización transitoria personal y no comercial.",
+        "usage_title": "3. Uso de la Plataforma",
+        "usage_desc": "Los usuarios son responsables de mantener la confidencialidad de sus cuentas y de todas las actividades que ocurran bajo su cuenta.",
+        "content_title": "4. Contenido",
+        "content_desc": "Los usuarios pueden publicar reseñas y fotos. Al hacerlo, otorga a Safar Morocco una licencia no exclusiva y libre de regalías para usar, reproducir y mostrar dicho contenido.",
+        "modifications_title": "5. Modificaciones",
+        "modifications_desc": "Safar Morocco puede revisar estos términos de servicio para su sitio web en cualquier momento sin previo aviso."
+    },
+    "privacy_policy": {
+        "title": "Política de Privacidad",
+        "collection_title": "1. Recopilación de Información",
+        "collection_desc": "Recopilamos la información que nos proporciona directamente, como cuando crea una cuenta, hace una reserva o se comunica con nosotros para obtener asistencia.",
+        "use_title": "2. Uso de la Información",
+        "use_desc": "Utilizamos la información que recopilamos para proporcionar, mantener y mejorar nuestros servicios, incluido el procesamiento de sus reservas y el envío de actualizaciones de viaje.",
+        "handling_title": "3. Manejo de Datos",
+        "handling_desc": "Los detalles de su reserva y la información personal se manejan con estricta confidencialidad y solo se comparten con socios relevantes (como los organizadores de eventos) para facilitar sus reservas.",
+        "reviews_title": "4. Reseñas y Calificaciones",
+        "reviews_desc": "Las reseñas y calificaciones públicas que proporcione serán visibles para otros usuarios de la plataforma para ayudarlos a tomar decisiones de viaje informadas.",
+        "security_title": "5. Seguridad",
+        "security_desc": "Implementamos una variedad de medidas de seguridad para mantener la seguridad de su información personal cuando ingresa, envía o accede a su información personal."
     }
 }

@@ -11,7 +11,7 @@
         "LOGOUT": "تسجيل الخروج",
         "LOGIN": "تسجيل الدخول",
         "SIGNUP": "إنشاء حساب",
-        "ITINERAIRES": "المسارات"
+        "ITINERARIES": "المسارات"
     },
     "CATEGORIES": {
         "ALL": "الكل",
@@ -443,6 +443,7 @@
         "LOCATION": "الموقع",
         "CITIES": {
             "RABAT": "الرباط",
+            "NADOR": "الناظور",
             "CASABLANCA": "الدار البيضاء",
             "MARRAKECH": "مراكش",
             "FES": "فاس",

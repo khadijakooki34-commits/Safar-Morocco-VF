@@ -9,7 +9,8 @@
         "SETTINGS": "Settings",
         "LOGOUT": "Logout",
         "LOGIN": "Login",
-        "SIGNUP": "Sign Up"
+        "SIGNUP": "Sign Up",
+        "ITINERARIES": "Itineraries"
     },
     "CATEGORIES": {
         "ALL": "All",
@@ -443,6 +444,7 @@
         "LOCATION": "Location",
         "CITIES": {
             "RABAT": "Rabat",
+            "NADOR": "Nador",
             "CASABLANCA": "Casablanca",
             "MARRAKECH": "Marrakesh",
             "FES": "Fez",

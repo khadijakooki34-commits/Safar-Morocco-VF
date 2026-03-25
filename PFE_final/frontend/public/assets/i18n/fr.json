@@ -9,7 +9,8 @@
         "SETTINGS": "Paramètres",
         "LOGOUT": "Déconnexion",
         "LOGIN": "Connexion",
-        "SIGNUP": "S'inscrire"
+        "SIGNUP": "S'inscrire",
+        "ITINERARIES": "Itinéraires"
     },
     "CATEGORIES": {
         "ALL": "Tout",
@@ -443,6 +444,7 @@
         "LOCATION": "Lieu",
         "CITIES": {
             "RABAT": "Rabat",
+            "NADOR": "Nador",
             "CASABLANCA": "Casablanca",
             "MARRAKECH": "Marrakech",
             "FES": "Fès",

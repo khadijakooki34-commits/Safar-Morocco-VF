@@ -78,8 +78,8 @@ export class DestinationListComponent implements OnInit {
                 this.cdr.detectChanges();
             },
             error: (err: any) => {
-                console.error('❌ LIST: Error loading destinations', err);
-                console.error('❌ LIST: Status:', err.status);
+                console.error('LIST: Error loading destinations', err);
+                console.error('LIST: Status:', err.status);
                 this.loading = false;
             }
         });

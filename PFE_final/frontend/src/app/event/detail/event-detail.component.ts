@@ -128,13 +128,17 @@ export class EventDetailComponent implements OnInit, OnDestroy {
             next: () => {
                 this.booking = false;
                 this.alreadyReserved = true;
-                this.snackBar.open('Réservation réussie!', 'Fermer', { duration: 3000 });
+                const msg = this.translate.instant('EVENTS.DETAIL.BOOKING_SUCCESS');
+                const close = this.translate.instant('COMMON.CLOSE');
+                this.snackBar.open(msg, close, { duration: 3000 });
                 this.cdr.detectChanges();
             },
             error: (err: any) => {
                 this.booking = false;
-                const msg = err.error?.message || 'Erreur lors de la réservation.';
-                this.snackBar.open(msg, 'Fermer', { duration: 3000 });
+                const fallback = this.translate.instant('EVENTS.DETAIL.BOOKING_ERROR');
+                const msg = err.error?.message || fallback;
+                const close = this.translate.instant('COMMON.CLOSE');
+                this.snackBar.open(msg, close, { duration: 3000 });
                 this.cdr.detectChanges();
             }
         });

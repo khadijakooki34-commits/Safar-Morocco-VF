@@ -9,7 +9,8 @@
         "SETTINGS": "Ajustes",
         "LOGOUT": "Cerrar sesión",
         "LOGIN": "Iniciar sesión",
-        "SIGNUP": "Registrarse"
+        "SIGNUP": "Registrarse",
+        "ITINERARIES": "Itinerarios"
     },
     "CATEGORIES": {
         "ALL": "Todos",
@@ -23,7 +24,7 @@
         "BEACH": "Playa",
         "CRAFT": "Artesanía",
         "FESTIVALS": "Festivales",
-        "FESTIVAL": "Festivale",
+        "FESTIVAL": "Festival",
         "MUSIC": "Música",
         "TRADITIONAL": "Tradicional"
     },
@@ -192,6 +193,8 @@
             "EMPTY_DESC": "Intenta ajustar tu búsqueda o filtros",
             "RESET": "Restablecer filtros",
             "UPCOMING": "Próximos",
+            "ONGOING": "En curso",
+            "ENDED": "Finalizado",
             "NO_EVENTS": "No hay eventos disponibles en este momento."
         },
         "DETAIL": {
@@ -224,7 +227,9 @@
                 "HOURS": "Horas",
                 "MINUTES": "Min",
                 "SECONDS": "Seg"
-            }
+            },
+            "BOOKING_SUCCESS": "¡Reserva exitosa!",
+            "BOOKING_ERROR": "Error durante la reserva."
         },
         "NAMES": {
             "Festival Gnaoua": "Festival de Gnaoua",
@@ -325,7 +330,15 @@
             "LOG_IN": "Iniciar sesión"
         }
     },
+    "STATUS": {
+        "CONFIRMED": "Confirmado",
+        "CANCELLED": "Cancelado",
+        "PENDING": "Pendiente",
+        "APPROVED": "Aprobado",
+        "REJECTED": "Rechazado"
+    },
     "PROFILE": {
+        "OFFER_FALLBACK": "Oferta #{{id}}",
         "EMAIL": "Email",
         "PHONE": "Teléfono",
         "EDIT": "Editar perfil",
@@ -338,7 +351,38 @@
         "BIO_PLACEHOLDER": "Cuéntanos sobre tu estilo de viaje...",
         "ACTIVITY": "Actividad reciente",
         "NO_ACTIVITY": "No se encontraron actividades aún",
-        "LOADING": "Cargando perfil..."
+        "LOADING": "Cargando perfil...",
+        "PHOTO_ALT": "Foto de perfil",
+        "CHANGE_PHOTO": "Cambiar foto",
+        "STATS": {
+            "RESERVATIONS": "Total de reservas",
+            "EVENTS": "Próximos eventos",
+            "ITINERARIES": "Itinerarios creados"
+        },
+        "SECTIONS": {
+            "ALL_RESERVATIONS": "Todas las reservas",
+            "UPCOMING_EVENTS": "Próximos eventos",
+            "CREATED_ITINERARIES": "Itinerarios creados"
+        },
+        "EMPTY_STATES": {
+            "NO_RESERVATIONS": "No se encontraron reservas.",
+            "BOOKING_PROMPT": "Comienza a reservar eventos, hoteles y actividades para verlos aquí.",
+            "NO_EVENTS": "No hay próximos eventos.",
+            "BROWSE_PROMPT": "¡Explora nuestro catálogo de eventos para encontrar actividades emocionantes!",
+            "NO_ITINERARIES": "No se han creado itinerarios.",
+            "CREATE_PROMPT": "¡Crea tu primer itinerario y comienza a explorar!"
+        },
+        "RESERVATION_TYPES": {
+            "EVENT": "EVENTO",
+            "HOTEL": "HOTEL",
+            "RESTAURANT": "RESTAURANTE",
+            "ACTIVITY": "ACTIVIDAD"
+        },
+        "ACTIONS": {
+            "CANCEL": "Cancelar",
+            "VIEW": "Ver"
+        },
+        "DESTINATIONS_COUNT": "{{count}} Destinos"
     },
     "SETTINGS": {
         "TITLE": "Ajustes de cuenta",
@@ -574,6 +618,14 @@
             "DEFAULT_DESC": "Únete a nosotros para esta increíble experiencia cultural en Marruecos.",
             "NO_EVENTS_TITLE": "No hay eventos próximos en este momento",
             "NO_EVENTS_DESC": "Vuelve más tarde para más reuniones culturales y festivales."
+        },
+        "RECOMMENDATIONS": {
+            "TITLE": "Recomendado para ti",
+            "SUBTITLE": "Destinos seleccionados según sus actividades y preferencias",
+            "LOADING": "Buscando los lugares perfectos para ti...",
+            "EMPTY_TITLE": "No hay recomendaciones disponibles todavía.",
+            "EMPTY_DESC": "Explora más destinos y guárdalos en tus favoritos para obtener sugerencias personalizadas.",
+            "EXPLORE": "Explorar"
         }
     },
     "ITINERARY": {

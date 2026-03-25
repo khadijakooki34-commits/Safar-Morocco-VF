@@ -193,6 +193,10 @@
             "EMPTY_DESC": "Try adjusting your search or filters",
             "RESET": "Reset Filters",
             "UPCOMING": "Upcoming",
+            "ONGOING": "Ongoing",
+            "ENDED": "Ended",
+            "EVENT_ONGOING": "Event currently ongoing",
+            "EVENT_ENDED": "Event ended",
             "NO_EVENTS": "No events available at the moment."
         },
         "DETAIL": {
@@ -225,7 +229,9 @@
                 "HOURS": "Hours",
                 "MINUTES": "Min",
                 "SECONDS": "Sec"
-            }
+            },
+            "BOOKING_SUCCESS": "Booking successful!",
+            "BOOKING_ERROR": "Error during booking."
         },
         "NAMES": {
             "Festival Gnaoua": "Gnaoua Festival",
@@ -326,7 +332,15 @@
             "LOG_IN": "Log in"
         }
     },
+    "STATUS": {
+        "CONFIRMED": "Confirmed",
+        "CANCELLED": "Cancelled",
+        "PENDING": "Pending",
+        "APPROVED": "Approved",
+        "REJECTED": "Rejected"
+    },
     "PROFILE": {
+        "OFFER_FALLBACK": "Offer #{{id}}",
         "EMAIL": "Email",
         "PHONE": "Phone",
         "EDIT": "Edit Profile",
@@ -339,7 +353,38 @@
         "BIO_PLACEHOLDER": "Tell us about your travel style...",
         "ACTIVITY": "Recent Activity",
         "NO_ACTIVITY": "No activities found yet",
-        "LOADING": "Loading profile..."
+        "LOADING": "Loading profile...",
+        "PHOTO_ALT": "Profile Photo",
+        "CHANGE_PHOTO": "Change Photo",
+        "STATS": {
+            "RESERVATIONS": "Total Reservations",
+            "EVENTS": "Upcoming Events",
+            "ITINERARIES": "Itineraries Created"
+        },
+        "SECTIONS": {
+            "ALL_RESERVATIONS": "All Reservations",
+            "UPCOMING_EVENTS": "Upcoming Events",
+            "CREATED_ITINERARIES": "Created Itineraries"
+        },
+        "EMPTY_STATES": {
+            "NO_RESERVATIONS": "No reservations found.",
+            "BOOKING_PROMPT": "Start booking events, hotels, and activities to see them here.",
+            "NO_EVENTS": "No upcoming events.",
+            "BROWSE_PROMPT": "Browse our events catalog to find exciting activities!",
+            "NO_ITINERARIES": "No itineraries created.",
+            "CREATE_PROMPT": "Create your first itinerary and start exploring!"
+        },
+        "RESERVATION_TYPES": {
+            "EVENT": "EVENT",
+            "HOTEL": "HOTEL",
+            "RESTAURANT": "RESTAURANT",
+            "ACTIVITY": "ACTIVITY"
+        },
+        "ACTIONS": {
+            "CANCEL": "Cancel",
+            "VIEW": "View"
+        },
+        "DESTINATIONS_COUNT": "{{count}} Destinations"
     },
     "SETTINGS": {
         "TITLE": "Account Settings",
@@ -579,6 +624,14 @@
             "DEFAULT_DESC": "Join us for this amazing cultural experience in Morocco.",
             "NO_EVENTS_TITLE": "No upcoming events at the moment",
             "NO_EVENTS_DESC": "Check back later for new cultural gatherings and festivals."
+        },
+        "RECOMMENDATIONS": {
+            "TITLE": "Recommended For You",
+            "SUBTITLE": "Curated destinations based on your activity and preferences",
+            "LOADING": "Finding perfect spots for you...",
+            "EMPTY_TITLE": "No recommendations available yet.",
+            "EMPTY_DESC": "Explore more destinations and favorite them to get personalized suggestions.",
+            "EXPLORE": "Explore"
         }
     },
     "CHATBOT": {

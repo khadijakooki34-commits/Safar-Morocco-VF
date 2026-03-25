@@ -55,7 +55,9 @@
             <div class="ed-infobar__icon"><i class="bi bi-clock-history"></i></div>
             <div>
               <span class="ed-infobar__label">{{ 'EVENTS.DETAIL.STATUS' | translate }}</span>
-              <span class="ed-infobar__value" style="color:#16a34a">{{ 'EVENTS.LIST.UPCOMING' | translate }}</span>
+              <span class="ed-infobar__value" [style.color]="eventPast ? '#ef4444' : (eventStarted ? '#f59e0b' : '#16a34a')">
+                {{ (eventPast ? 'EVENTS.LIST.ENDED' : (eventStarted ? 'EVENTS.LIST.ONGOING' : 'EVENTS.LIST.UPCOMING')) | translate }}
+              </span>
             </div>
           </div>
           <div class="ed-infobar__sep"></div>

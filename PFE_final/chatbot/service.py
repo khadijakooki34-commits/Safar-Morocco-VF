@@ -17,7 +17,10 @@ client = None
 
 if api_key:
     try:
-        client = genai.Client(api_key=api_key)
+        client = genai.Client(
+            api_key=api_key,
+            http_options={'headers': {'Referer': 'http://localhost:8000'}}
+        )
         print("Gemini Client initialized successfully")
     except Exception as e:
         print(f"Error initializing Gemini Client: {e}")
@@ -154,14 +157,14 @@ def get_fallback_response(message: str, last_error_type: Optional[str]) -> str:
                     desc = desc[:300] + "..."
                 return f"Since I'm in offline mode, I retrieved this from my local database:\n\n**{target.get('name') or 'Unknown'}** ({target.get('city') or 'Unknown'})\n\n{desc}\n\n*This is an automated fallback response.*"
             
-            city_names = sorted(list(set(d.get('city') or 'Unknown' for d in dests)))
+            city_names = sorted(list(set(d.get('city') for d in dests if d.get('city'))))
             # Avoid slicing/indexing for strict IDE compatibility
             short_city_list = list(city_names)
             while len(short_city_list) > 10:
                 short_city_list.pop()
-            cities_str = ", ".join(short_city_list)
+            cities_str = ", ".join(short_city_list) if short_city_list else "various Moroccan cities"
             
-            return f"I'm currently offline due to high traffic.\n\nI couldn't find a match for your query in my local records, but I have information about these cities:\n**{cities_str}**.\n\nTry asking about one of them (e.g., 'Marrakech')!"
+            return f"I'm currently offline due to high traffic.\n\nI couldn't find a match for your query in my local records, but I have information about:\n**{cities_str}**.\n\nTry asking about one of them (e.g., 'Marrakech')!"
         
         except Exception as e:
             print(f"Fallback logic failed: {e}")
@@ -224,7 +227,10 @@ def generate_chat_response(db: Session, message: str, session_id: Optional[str] 
         user_memories = db.query(models.UserMemory).filter(models.UserMemory.user_id == user_id).all()
 
     models_to_try = [
+        "gemini-1.5-flash-latest",
         "gemini-1.5-flash",
+        "gemini-1.5-flash-8b",
+        "gemini-1.5-pro-latest",
         "gemini-1.5-pro",
         "gemini-2.0-flash"
     ]

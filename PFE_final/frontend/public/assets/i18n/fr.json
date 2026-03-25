@@ -820,5 +820,12 @@
             "DESC": "Si vous avez des questions ou des préoccupations concernant ces Conditions Générales, veuillez nous contacter à :"
         },
         "BACK_TO_SIGNUP": "Retour à l'Inscription"
+    },
+    "AUTH_REQUIRED": {
+        "TITLE": "Authentification Requise",
+        "MESSAGE": "Vous devez vous connecter ou créer un compte pour accéder à ce contenu.",
+        "LOG_IN": "Se Connecter",
+        "CREATE_ACCOUNT": "Créer un Compte",
+        "RETURN_HOME": "Retour à l'Accueil"
     }
 }

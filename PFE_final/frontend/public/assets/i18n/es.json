@@ -810,5 +810,12 @@
             "DESC": "Si tiene alguna pregunta o inquietud sobre estos Términos y Condiciones, por favor contáctenos en:"
         },
         "BACK_TO_SIGNUP": "Volver al Registro"
+    },
+    "AUTH_REQUIRED": {
+        "TITLE": "Autenticación Requerida",
+        "MESSAGE": "Debe iniciar sesión o crear una cuenta para acceder a este contenido.",
+        "LOG_IN": "Iniciar Sesión",
+        "CREATE_ACCOUNT": "Crear Cuenta",
+        "RETURN_HOME": "Volver al Inicio"
     }
 }

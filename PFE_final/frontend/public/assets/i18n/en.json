@@ -830,5 +830,12 @@
             "DESC": "If you have any questions or concerns regarding these Terms and Conditions, please contact us at:"
         },
         "BACK_TO_SIGNUP": "Back to Sign Up"
+    },
+    "AUTH_REQUIRED": {
+        "TITLE": "Authentication Required",
+        "MESSAGE": "You need to log in or create an account to access this content.",
+        "LOG_IN": "Log In",
+        "CREATE_ACCOUNT": "Create Account",
+        "RETURN_HOME": "Return to Home"
     }
 }

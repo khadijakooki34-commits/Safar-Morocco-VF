@@ -1,12 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, signal } from '@angular/core';
 import { AuthService } from '../../core/services/auth.service';
 import { Router } from '@angular/router';
+import { Directionality, Direction } from '@angular/cdk/bidi';
+
+export class LtrDirectionality implements Directionality {
+    readonly value: Direction = 'ltr';
+    readonly change = new EventEmitter<Direction>();
+    readonly valueSignal = signal<Direction>('ltr');
+    ngOnDestroy() {}
+}
 
 @Component({
     standalone: false,
     selector: 'app-admin-layout',
     templateUrl: './layout.component.html',
-    styleUrls: ['./layout.component.css']
+    styleUrls: ['./layout.component.css'],
+    providers: [{ provide: Directionality, useClass: LtrDirectionality }]
 })
 export class AdminLayoutComponent implements OnInit {
     isSidebarOpen = true;

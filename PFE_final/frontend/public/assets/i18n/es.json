@@ -565,6 +565,15 @@
             "TITLE": "¿Necesitas consejos de viaje?",
             "DESC": "Nuestro experto en viajes de IA está listo para ayudarte a planificar tu viaje perfecto a Marruecos.",
             "START": "Chatear con IA"
+        },
+        "EVENTS": {
+            "TAG": "Festivales y Cultura",
+            "TITLE": "Próximos Eventos",
+            "SUBTITLE": "Vive la magia de Marruecos a través de sus festivales únicos y encuentros culturales.",
+            "EXPLORE_ALL": "Explorar todos los eventos",
+            "DEFAULT_DESC": "Únete a nosotros para esta increíble experiencia cultural en Marruecos.",
+            "NO_EVENTS_TITLE": "No hay eventos próximos en este momento",
+            "NO_EVENTS_DESC": "Vuelve más tarde para más reuniones culturales y festivales."
         }
     },
     "ITINERARY": {

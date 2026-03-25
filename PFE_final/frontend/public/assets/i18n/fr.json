@@ -570,6 +570,15 @@
             "TITLE": "Besoin de conseils ?",
             "DESC": "Notre expert en voyage IA est prêt à vous aider à planifier votre voyage parfait au Maroc.",
             "START": "Discuter avec l'IA"
+        },
+        "EVENTS": {
+            "TAG": "Festivals & Culture",
+            "TITLE": "Événements à Venir",
+            "SUBTITLE": "Découvrez la magie du Maroc à travers ses festivals uniques et ses rassemblements culturels.",
+            "EXPLORE_ALL": "Explorer tous les événements",
+            "DEFAULT_DESC": "Rejoignez-nous pour cette incroyable expérience culturelle au Maroc.",
+            "NO_EVENTS_TITLE": "Aucun événement à venir pour le moment",
+            "NO_EVENTS_DESC": "Revenez plus tard pour de nouveaux rassemblements culturels et festivals."
         }
     },
     "CHATBOT": {

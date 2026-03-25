@@ -86,7 +86,19 @@ export class TranslateValuePipe implements PipeTransform {
             'cultural': 'ثقافي',
             'nature': 'طبيعة',
             'historical': 'تاريخي',
-            'religious': 'ديني'
+            'religious': 'ديني',
+            'fes sacred music': 'مهرجان فاس للموسيقى الروحية',
+            'fes sacred music.': 'مهرجان فاس للموسيقى الروحية.',
+            'mawazine': 'موازين',
+            'timitar': 'تيميتار',
+            'festival gnaoua': 'مهرجان كناوة',
+            'spiritual music': 'موسيقى روحية',
+            'spiritual music.': 'موسيقى روحية.',
+            'amazigh culture festival': 'مهرجان الثقافة الأمازيغية',
+            'amazigh culture festival.': 'مهرجان الثقافة الأمازيغية.',
+            'international music festival': 'مهرجان الموسيقى الدولي',
+            'international music festival.': 'مهرجان الموسيقى الدولي.',
+            'join us for this amazing cultural experience in morocco.': 'انضم إلينا في هذه التجربة الثقافية الرائعة في المغرب.'
         },
         'en': {
             'janvier': 'January', 'février': 'February', 'fevrier': 'February', 'mars': 'March',
@@ -98,7 +110,20 @@ export class TranslateValuePipe implements PipeTransform {
             'tashelhit': 'Tashelhit', 'amazigh': 'Amazigh',
             'anglais': 'English', 'espagnol': 'Spanish',
             'darija': 'Darija', 'berbère': 'Berber', 'berbere': 'Berber',
-            'cultural': 'Cultural', 'nature': 'Nature', 'historical': 'Historical', 'religious': 'Religious'
+            'cultural': 'Cultural', 'nature': 'Nature', 'historical': 'Historical', 'religious': 'Religious',
+            'fes': 'Fes', 'marrakech': 'Marrakech', 'casablanca': 'Casablanca', 'agadir': 'Agadir', 'rabat': 'Rabat', 'tangier': 'Tangier', 'tanger': 'Tangier', 'essaouira': 'Essaouira',
+            'fes sacred music': 'Fes Sacred Music',
+            'fes sacred music.': 'Fes Sacred Music.',
+            'mawazine': 'Mawazine',
+            'timitar': 'Timitar',
+            'festival gnaoua': 'Gnaoua Festival',
+            'spiritual music': 'Spiritual Music',
+            'spiritual music.': 'Spiritual Music.',
+            'amazigh culture festival': 'Amazigh Culture Festival',
+            'amazigh culture festival.': 'Amazigh Culture Festival.',
+            'international music festival': 'International Music Festival',
+            'international music festival.': 'International Music Festival.',
+            'join us for this amazing cultural experience in morocco.': 'Join us for this amazing cultural experience in Morocco.'
         },
         'es': {
             'janvier': 'Enero', 'février': 'Febrero', 'fevrier': 'Febrero', 'mars': 'Marzo',
@@ -110,7 +135,20 @@ export class TranslateValuePipe implements PipeTransform {
             'tashelhit': 'Tashelhit', 'amazigh': 'Amazigh',
             'anglais': 'Inglés', 'espagnol': 'Español',
             'darija': 'Darija', 'berbère': 'Bereber', 'berbere': 'Bereber',
-            'cultural': 'Cultural', 'nature': 'Naturaleza', 'historical': 'Histórico', 'religious': 'Religioso'
+            'cultural': 'Cultural', 'nature': 'Naturaleza', 'historical': 'Histórico', 'religious': 'Religioso',
+            'fes': 'Fez', 'marrakech': 'Marrakech', 'casablanca': 'Casablanca', 'agadir': 'Agadir', 'rabat': 'Rabat', 'tangier': 'Tánger', 'tanger': 'Tánger', 'essaouira': 'Esauira',
+            'fes sacred music': 'Festival de Músicas Sacras de Fez',
+            'fes sacred music.': 'Festival de Músicas Sacras de Fez.',
+            'mawazine': 'Mawazine',
+            'timitar': 'Timitar',
+            'festival gnaoua': 'Festival de Gnaoua',
+            'spiritual music': 'Música espiritual',
+            'spiritual music.': 'Música espiritual.',
+            'amazigh culture festival': 'Festival de cultura amazigh',
+            'amazigh culture festival.': 'Festival de cultura amazigh.',
+            'international music festival': 'Festival internacional de música',
+            'international music festival.': 'Festival internacional de música.',
+            'join us for this amazing cultural experience in morocco.': 'Únete a nosotros para esta increíble experiencia cultural en Marruecos.'
         },
         'fr': {
             'january': 'janvier', 'february': 'février', 'march': 'mars',
@@ -118,7 +156,20 @@ export class TranslateValuePipe implements PipeTransform {
             'july': 'juillet', 'august': 'août', 'september': 'septembre',
             'october': 'octobre', 'november': 'novembre', 'december': 'décembre',
             'arabic': 'arabe', 'french': 'français', 'english': 'anglais', 'spanish': 'espagnol',
-            'berber': 'berbère'
+            'berber': 'berbère',
+            'fes': 'Fès', 'marrakech': 'Marrakech', 'casablanca': 'Casablanca', 'agadir': 'Agadir', 'rabat': 'Rabat', 'tangier': 'Tanger', 'tanger': 'Tanger', 'essaouira': 'Essaouira',
+            'fes sacred music': 'Festival des Musiques Sacrées',
+            'fes sacred music.': 'Festival des Musiques Sacrées.',
+            'mawazine': 'Mawazine',
+            'timitar': 'Timitar',
+            'festival gnaoua': 'Festival Gnaoua',
+            'spiritual music': 'Musique spirituelle',
+            'spiritual music.': 'Musique spirituelle.',
+            'amazigh culture festival': 'Festival de la culture amazighe',
+            'amazigh culture festival.': 'Festival de la culture amazighe.',
+            'international music festival': 'Festival international de musique',
+            'international music festival.': 'Festival international de musique.',
+            'join us for this amazing cultural experience in morocco.': 'Rejoignez-nous pour cette incroyable expérience culturelle au Maroc.'
         }
     };
 

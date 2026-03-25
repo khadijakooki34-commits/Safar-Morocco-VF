@@ -570,6 +570,15 @@
             "TITLE": "Need Travel Advice?",
             "DESC": "Our AI travel expert is ready to help you plan your perfect trip to Morocco.",
             "START": "Chat with AI"
+        },
+        "EVENTS": {
+            "TAG": "Festivals & Culture",
+            "TITLE": "Upcoming Events",
+            "SUBTITLE": "Experience the magic of Morocco through its unique festivals and cultural gatherings.",
+            "EXPLORE_ALL": "Explore All Events",
+            "DEFAULT_DESC": "Join us for this amazing cultural experience in Morocco.",
+            "NO_EVENTS_TITLE": "No upcoming events at the moment",
+            "NO_EVENTS_DESC": "Check back later for new cultural gatherings and festivals."
         }
     },
     "CHATBOT": {

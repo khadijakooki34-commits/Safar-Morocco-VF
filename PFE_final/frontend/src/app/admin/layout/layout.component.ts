@@ -1,8 +1,9 @@
-import { Component, OnInit, EventEmitter, signal } from '@angular/core';
+import { Component, OnInit, EventEmitter, signal, Injectable } from '@angular/core';
 import { AuthService } from '../../core/services/auth.service';
 import { Router } from '@angular/router';
 import { Directionality, Direction } from '@angular/cdk/bidi';
 
+@Injectable()
 export class LtrDirectionality implements Directionality {
     readonly value: Direction = 'ltr';
     readonly change = new EventEmitter<Direction>();

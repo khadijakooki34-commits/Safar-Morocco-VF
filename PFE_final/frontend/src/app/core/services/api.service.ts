@@ -187,6 +187,7 @@ export class ApiService {
             users: this.getAllUsers(),
             destinations: this.getDestinations(),
             events: this.getEvents(),
+            reviews: this.getAllReviews(),
             activeUsersObj: this.http.get<any>('/api/utilisateurs/stats/active').pipe(catchError((err: any) => of({ activeUsers: 0 })))
         }).pipe(
             map(data => {
@@ -242,12 +243,14 @@ export class ApiService {
                     }
                 });
 
+                const pendingReviewsCount = data.reviews ? data.reviews.filter((r: any) => r.status === 'PENDING').length : 0;
+
                 return {
                     totalUsers: data.users.length,
                     activeUsers: data.activeUsersObj.activeUsers || 0,
                     totalDestinations: data.destinations.length,
                     upcomingEvents: data.events.length,
-                    pendingReviews: 0,
+                    pendingReviews: pendingReviewsCount,
                     categoryStats: categoryStats,
                     userGrowth: userGrowth,
                     activityStats: activityStats

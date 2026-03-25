@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { TranslateService } from '@ngx-translate/core';
+
 @Component({
   selector: 'app-terms-and-conditions',
   standalone: false,
@@ -8,4 +10,10 @@ import { Component } from '@angular/core';
 })
 export class TermsAndConditionsComponent {
   currentDate = new Date();
+
+  constructor(public translate: TranslateService) {}
+
+  get currentLang(): string {
+    return this.translate.currentLang || this.translate.getDefaultLang() || 'en';
+  }
 }

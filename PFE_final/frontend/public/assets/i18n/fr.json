@@ -755,5 +755,70 @@
         "reviews_desc": "Les avis publics et les évaluations que vous fournissez seront visibles par les autres utilisateurs de la plateforme pour les aider à prendre des décisions de voyage éclairées.",
         "security_title": "5. Sécurité",
         "security_desc": "Nous mettons en œuvre diverses mesures de sécurité pour maintenir la sécurité de vos informations personnelles lorsque vous entrez, soumettez ou accédez à vos informations personnelles."
+    },
+    "TERMS_AND_CONDITIONS": {
+        "TITLE": "Conditions Générales",
+        "LAST_UPDATED": "Dernière mise à jour : {{date}}",
+        "INTRO": {
+            "TITLE": "1. Introduction",
+            "DESC": "Bienvenue sur <strong>Safar Morocco</strong>, votre plateforme de choix pour découvrir et réserver des expériences de voyage uniques à travers le Royaume. En accédant ou en utilisant notre site web, nos services ou nos applications mobiles, vous acceptez d'être lié par ces Conditions Générales. Si vous n'êtes pas d'accord avec une partie de ces conditions, veuillez vous abstenir d'utiliser notre plateforme."
+        },
+        "ACCOUNTS": {
+            "TITLE": "2. Comptes Utilisateurs",
+            "DESC": "Pour accéder à certaines fonctionnalités de Safar Morocco, vous devez créer un compte. Vous acceptez de :",
+            "LIST": {
+                "1": "Fournir des informations précises, à jour et complètes lors du processus d'inscription.",
+                "2": "Maintenir et mettre à jour rapidement les informations de votre compte.",
+                "3": "Protéger vos identifiants de connexion et maintenir la sécurité de votre mot de passe.",
+                "4": "Accepter tous les risques d'accès non autorisé à votre compte en raison de votre incapacité à protéger vos identifiants."
+            }
+        },
+        "RESERVATIONS": {
+            "TITLE": "3. Réservations et Offres",
+            "DESC": "Safar Morocco facilite les réservations pour diverses activités touristiques et hébergements. Veuillez noter que :",
+            "LIST": {
+                "1": "Toutes les réservations effectuées via notre plateforme sont soumises à la disponibilité et à la confirmation du prestataire de services.",
+                "2": "Les prix et la disponibilité sont sujets à changement sans préavis jusqu'à ce qu'une réservation soit confirmée.",
+                "3": "La plateforme agit en tant qu'intermédiaire ; le contrat de service est directement entre vous et le prestataire de services."
+            }
+        },
+        "ACCEPTABLE_USE": {
+            "TITLE": "4. Utilisation Acceptable",
+            "DESC": "Vous acceptez de ne pas faire un mauvais usage de la plateforme. Les activités interdites incluent, mais ne sont pas limitées à :",
+            "LIST": {
+                "1": "Tenter d'obtenir un accès non autorisé à nos systèmes ou aux comptes d'autres utilisateurs.",
+                "2": "Publier du contenu nuisible, offensant ou illégal.",
+                "3": "Utiliser la plateforme à des fins frauduleuses ou malveillantes.",
+                "4": "Interférer avec le bon fonctionnement de la plateforme ou ses fonctions de sécurité."
+            }
+        },
+        "PRIVACY": {
+            "TITLE": "5. Confidentialité et Protection des Données",
+            "DESC": "Chez Safar Morocco, nous accordons de l'importance à votre vie privée. Nous collectons des informations sur les utilisateurs telles que le nom, l'email et les données d'activité principalement pour :",
+            "LIST": {
+                "1": "Fournir et améliorer nos services.",
+                "2": "Personnaliser votre expérience sur la plateforme.",
+                "3": "Communiquer avec vous concernant vos réservations et offres."
+            },
+            "MORE_DETAILS": "Pour plus de détails, veuillez consulter notre <a routerLink=\"/privacy-policy\" class=\"text-terracotta fw-600\">Politique de Confidentialité</a>."
+        },
+        "REVIEWS": {
+            "TITLE": "6. Avis et Contenu Utilisateur",
+            "DESC": "Les utilisateurs sont encouragés à partager leurs expériences à travers des avis et des évaluations. Cependant :",
+            "LIST": {
+                "1": "Vous déclarez que vous possédez ou avez les droits nécessaires sur le contenu que vous publiez.",
+                "2": "Safar Morocco se réserve le droit de supprimer tout contenu jugé inapproprié, offensant ou en violation de ces conditions.",
+                "3": "En publiant du contenu, vous nous accordez une licence non exclusive pour l'utiliser à des fins promotionnelles."
+            }
+        },
+        "CHANGES": {
+            "TITLE": "7. Modification des Conditions",
+            "DESC": "Safar Morocco se réserve le droit de mettre à jour ou de modifier ces conditions à tout moment. Nous informerons les utilisateurs des changements importants, et votre utilisation continue de la plateforme après de tels changements constitue une acceptation des nouvelles conditions."
+        },
+        "CONTACT": {
+            "TITLE": "8. Contact",
+            "DESC": "Si vous avez des questions ou des préoccupations concernant ces Conditions Générales, veuillez nous contacter à :"
+        },
+        "BACK_TO_SIGNUP": "Retour à l'Inscription"
     }
 }

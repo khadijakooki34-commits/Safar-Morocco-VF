@@ -77,6 +77,27 @@
     font-weight: bold;
 }
 
+/* RTL Support */
+:host-context([dir="rtl"]) .section-title::after {
+    left: auto;
+    right: 0;
+}
+
+:host-context([dir="rtl"]) .terms-body ul {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+:host-context([dir="rtl"]) .terms-body ul li {
+    padding-left: 0;
+    padding-right: 1.75rem;
+}
+
+:host-context([dir="rtl"]) .terms-body ul li::before {
+    left: auto;
+    right: 0;
+}
+
 .contact-link {
     color: var(--safar-majorelle);
     text-decoration: none;

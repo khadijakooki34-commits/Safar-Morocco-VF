@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { AuthService } from '../../core/services/auth.service';
 import { LanguageService, Language } from '../../core/services/language.service';
+import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
 
 @Component({
     standalone: false,
@@ -14,13 +16,15 @@ export class HeaderComponent {
     isUserAdmin = false;
     isScrolled = false;
     menuOpen = false;
+    isAdminRoute = false;
 
     languages: Array<Language> = [];
     currentLanguage?: Language;
 
     constructor(
         public authService: AuthService,
-        public languageService: LanguageService
+        public languageService: LanguageService,
+        public router: Router
     ) {
         this.languages = this.languageService.languages;
         this.languageService.currentLang$.subscribe(() => {
@@ -31,6 +35,13 @@ export class HeaderComponent {
             this.isUserLoggedIn = !!user;
             this.isUserAdmin = user?.role === 'ADMIN';
         });
+
+        this.router.events.pipe(
+            filter(event => event instanceof NavigationEnd)
+        ).subscribe((event: any) => {
+            this.isAdminRoute = event.urlAfterRedirects.includes('/admin');
+        });
+        this.isAdminRoute = this.router.url.includes('/admin');
 
         window.addEventListener('scroll', () => {
             this.isScrolled = window.scrollY > 20;

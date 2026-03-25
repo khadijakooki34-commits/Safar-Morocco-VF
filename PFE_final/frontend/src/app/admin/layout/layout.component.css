@@ -150,4 +150,23 @@
     }
 }
 
+/* RTL Specific Styles for Admin Layout */
+[dir="rtl"] .profile-section {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .profile-info {
+    align-items: flex-start;
+}
+
+[dir="rtl"] .toggle-btn i.bi-list,
+[dir="rtl"] .toggle-btn i.bi-text-indent-left {
+    display: inline-block;
+    transform: scaleX(-1);
+}
+
+[dir="rtl"] .admin-sidebar {
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+}
+
 

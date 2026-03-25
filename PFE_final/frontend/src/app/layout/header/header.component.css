@@ -345,23 +345,11 @@
 [dir="rtl"] .nav-actions {
     margin-left: 0;
     margin-right: auto;
-    flex-direction: row-reverse;
 }
 
 [dir="rtl"] .dropdown-menu-end {
     right: auto;
     left: 0;
-}
-
-[dir="rtl"] .brand-logo {
-    flex-direction: row-reverse;
-}
-
-[dir="rtl"] .nav-link,
-[dir="rtl"] .admin-btn,
-[dir="rtl"] .user-btn,
-[dir="rtl"] .lang-btn {
-    flex-direction: row-reverse;
 }
 
 [dir="rtl"] .active-check {

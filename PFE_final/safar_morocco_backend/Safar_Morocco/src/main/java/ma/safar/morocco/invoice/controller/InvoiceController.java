@@ -21,14 +21,14 @@ public class InvoiceController {
     public ResponseEntity<InvoiceDTO> generateInvoice(
             @PathVariable("itineraryId") Long itineraryId,
             @PathVariable("userId") Long userId,
-            @RequestParam(defaultValue = "fr", required = false) String lang) {
+            @RequestParam(name = "lang", defaultValue = "fr", required = false) String lang) {
         return new ResponseEntity<>(invoiceService.generateInvoice(itineraryId, userId, lang), HttpStatus.CREATED);
     }
 
     @PostMapping("/generate/reservation/{reservationId}")
     public ResponseEntity<InvoiceDTO> generateReservationInvoice(
             @PathVariable("reservationId") Long reservationId,
-            @RequestParam(defaultValue = "fr", required = false) String lang) {
+            @RequestParam(name = "lang", defaultValue = "fr", required = false) String lang) {
         return new ResponseEntity<>(invoiceService.generateInvoiceForReservation(reservationId, lang), HttpStatus.CREATED);
     }
 

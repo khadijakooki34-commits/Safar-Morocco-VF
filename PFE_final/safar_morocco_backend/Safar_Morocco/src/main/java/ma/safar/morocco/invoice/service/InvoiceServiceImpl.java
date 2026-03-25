@@ -249,10 +249,21 @@ public class InvoiceServiceImpl implements InvoiceService {
 
         for (OfferReservation res : reservations) {
             ma.safar.morocco.offer.entity.Offer offer = res.getOffer();
+            if (offer == null) {
+                table.addCell(createCell(getTranslatedText(KEY_NAME, lang) + " N/A", fontHelper, borderColor, TextAlignment.LEFT));
+                table.addCell(createCell("N/A", fontHelper, borderColor, TextAlignment.LEFT));
+                table.addCell(createCell(buildReservationDates(res), fontHelper, borderColor, TextAlignment.LEFT));
+                table.addCell(createCell(String.valueOf(res.getQuantity()), fontHelper, borderColor, TextAlignment.RIGHT));
+                table.addCell(createCell("0.00 MAD", fontHelper, borderColor, TextAlignment.RIGHT));
+                table.addCell(createCell(res.getTotalPrice() != null ? formatCurrency(res.getTotalPrice()) : "0.00 MAD", fontHelper, borderColor, TextAlignment.RIGHT));
+                continue;
+            }
+
             String nameWithDetails = buildOfferNameDetails(offer);
             
             table.addCell(createCell(nameWithDetails, fontHelper, borderColor, TextAlignment.LEFT));
-            table.addCell(createCell(offer.getType().toString(), fontHelper, borderColor, TextAlignment.LEFT));
+            String offerTypeStr = offer.getType() != null ? offer.getType().toString() : "N/A";
+            table.addCell(createCell(offerTypeStr, fontHelper, borderColor, TextAlignment.LEFT));
             table.addCell(createCell(buildReservationDates(res), fontHelper, borderColor, TextAlignment.LEFT));
             table.addCell(createCell(String.valueOf(res.getQuantity()), fontHelper, borderColor, TextAlignment.RIGHT));
 
@@ -268,7 +279,8 @@ public class InvoiceServiceImpl implements InvoiceService {
     }
 
     private String buildOfferNameDetails(ma.safar.morocco.offer.entity.Offer offer) {
-        String nameWithDetails = offer.getName();
+        if (offer == null) return "Unknown Offer";
+        String nameWithDetails = offer.getName() != null ? offer.getName() : "Unknown";
         if (offer.getType() == ma.safar.morocco.offer.enums.OfferType.HOTEL) {
             nameWithDetails += "\nRoom: " + (offer.getRoomType() != null ? offer.getRoomType() : "Standard") + (offer.getStars() != null ? " (" + offer.getStars() + "* Stars)" : "");
         } else if (offer.getType() == ma.safar.morocco.offer.enums.OfferType.RESTAURANT) {

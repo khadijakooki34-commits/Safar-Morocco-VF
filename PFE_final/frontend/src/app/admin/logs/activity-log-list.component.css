@@ -81,3 +81,22 @@
     background-color: rgba(255, 193, 7, 0.1) !important;
     color: #ffc107;
 }
+
+/* Date Range Picker Overrides */
+::ng-deep .date-range-field .mat-mdc-form-field-subscript-wrapper {
+    display: none;
+}
+
+::ng-deep .date-range-field .mat-mdc-text-field-wrapper {
+    background-color: #f8f9fa;
+    border-radius: 50rem;
+    padding: 0 1rem;
+}
+
+::ng-deep .date-range-field .mdc-notched-outline {
+    display: none;
+}
+
+::ng-deep .date-range-field {
+    width: 250px;
+}

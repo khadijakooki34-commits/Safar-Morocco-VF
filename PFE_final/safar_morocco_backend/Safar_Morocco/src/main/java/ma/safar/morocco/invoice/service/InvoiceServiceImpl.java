@@ -33,13 +33,15 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.ibm.icu.text.ArabicShaping;
+import com.ibm.icu.text.ArabicShapingException;
+import com.ibm.icu.text.Bidi;
 import java.io.File;
 import java.io.InputStream;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Locale;
-
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -159,8 +161,21 @@ public class InvoiceServiceImpl implements InvoiceService {
             try {
                 document.setMargins(40, 40, 40, 40);
 
-                PdfFont fontHelvetica = PdfFontFactory.createFont(StandardFonts.HELVETICA);
-                PdfFont fontHelveticaBold = PdfFontFactory.createFont(StandardFonts.HELVETICA_BOLD);
+                PdfFont fontHelvetica;
+                PdfFont fontHelveticaBold;
+
+                if ("ar".equalsIgnoreCase(lang) || "ma".equalsIgnoreCase(lang)) {
+                    try {
+                        fontHelvetica = PdfFontFactory.createFont("C:/Windows/Fonts/arial.ttf", com.itextpdf.io.font.PdfEncodings.IDENTITY_H);
+                        fontHelveticaBold = PdfFontFactory.createFont("C:/Windows/Fonts/arialbd.ttf", com.itextpdf.io.font.PdfEncodings.IDENTITY_H);
+                    } catch (Exception e) {
+                        fontHelvetica = PdfFontFactory.createFont(StandardFonts.HELVETICA);
+                        fontHelveticaBold = PdfFontFactory.createFont(StandardFonts.HELVETICA_BOLD);
+                    }
+                } else {
+                    fontHelvetica = PdfFontFactory.createFont(StandardFonts.HELVETICA, com.itextpdf.io.font.PdfEncodings.CP1252);
+                    fontHelveticaBold = PdfFontFactory.createFont(StandardFonts.HELVETICA_BOLD, com.itextpdf.io.font.PdfEncodings.CP1252);
+                }
 
                 DeviceRgb brandColor = new DeviceRgb(249, 115, 22);
                 DeviceRgb borderColor = new DeviceRgb(220, 220, 220);
@@ -190,8 +205,8 @@ public class InvoiceServiceImpl implements InvoiceService {
         headerTable.addCell(logoCell);
 
         Cell titleCell = new Cell().setBorder(Border.NO_BORDER).setTextAlignment(TextAlignment.RIGHT);
-        titleCell.add(new Paragraph("SAFAR MOROCCO").setFont(fontBold).setFontSize(18));
-        titleCell.add(new Paragraph("Travel & Experiences").setFont(fontHelperText).setFontSize(11).setFontColor(footerColor));
+        titleCell.add(new Paragraph(shapeAndReorder("SAFAR MOROCCO", "en")).setFont(fontBold).setFontSize(18));
+        titleCell.add(new Paragraph(shapeAndReorder("Travel & Experiences", "en")).setFont(fontHelperText).setFontSize(11).setFontColor(footerColor));
         headerTable.addCell(titleCell);
 
         document.add(headerTable);
@@ -211,18 +226,18 @@ public class InvoiceServiceImpl implements InvoiceService {
         Table infoTable = new Table(UnitValue.createPercentArray(infoWidths)).useAllAvailableWidth();
 
         Cell leftInfoCell = new Cell().setBorder(Border.NO_BORDER);
-        leftInfoCell.add(new Paragraph(getTranslatedText(KEY_INVOICE, lang)).setFont(fontBold).setFontSize(22).setFontColor(brandColor));
-        leftInfoCell.add(new Paragraph(getTranslatedText(KEY_INVOICE_NO, lang) + " INV-" + invoice.getId()).setFont(fontHelper).setFontSize(11));
+        leftInfoCell.add(new Paragraph(shapeAndReorder(getTranslatedText(KEY_INVOICE, lang), lang)).setFont(fontBold).setFontSize(22).setFontColor(brandColor));
+        leftInfoCell.add(new Paragraph(shapeAndReorder(getTranslatedText(KEY_INVOICE_NO, lang) + " INV-" + invoice.getId(), lang)).setFont(fontHelper).setFontSize(11));
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
-        leftInfoCell.add(new Paragraph(getTranslatedText(KEY_DATE, lang) + " " + invoice.getGeneratedDate().format(formatter)).setFont(fontHelper).setFontSize(11));
+        leftInfoCell.add(new Paragraph(shapeAndReorder(getTranslatedText(KEY_DATE, lang) + " " + invoice.getGeneratedDate().format(formatter), lang)).setFont(fontHelper).setFontSize(11));
         infoTable.addCell(leftInfoCell);
 
         Cell rightInfoCell = new Cell().setBorder(Border.NO_BORDER).setTextAlignment(TextAlignment.RIGHT);
-        rightInfoCell.add(new Paragraph(getTranslatedText(KEY_BILLED_TO, lang)).setFont(fontBold).setFontSize(11));
-        rightInfoCell.add(new Paragraph(user.getNom()).setFont(fontHelper).setFontSize(11));
-        rightInfoCell.add(new Paragraph(user.getEmail()).setFont(fontHelper).setFontSize(11));
-        rightInfoCell.add(new Paragraph(getTranslatedText(KEY_ITINERARY, lang) + " " + itinerary.getNom()).setFont(fontHelper).setFontSize(11));
+        rightInfoCell.add(new Paragraph(shapeAndReorder(getTranslatedText(KEY_BILLED_TO, lang), lang)).setFont(fontBold).setFontSize(11));
+        rightInfoCell.add(new Paragraph(shapeAndReorder(user.getNom(), lang)).setFont(fontHelper).setFontSize(11));
+        rightInfoCell.add(new Paragraph(shapeAndReorder(user.getEmail(), lang)).setFont(fontHelper).setFontSize(11));
+        rightInfoCell.add(new Paragraph(shapeAndReorder(getTranslatedText(KEY_ITINERARY, lang) + " " + itinerary.getNom(), lang)).setFont(fontHelper).setFontSize(11));
         infoTable.addCell(rightInfoCell);
 
         document.add(infoTable);
@@ -235,7 +250,7 @@ public class InvoiceServiceImpl implements InvoiceService {
 
         String[] headers = { getTranslatedText(KEY_NAME, lang), getTranslatedText(KEY_TYPE, lang), getTranslatedText(KEY_DATES, lang), getTranslatedText(KEY_QTY, lang), getTranslatedText(KEY_UNIT_PRICE, lang), getTranslatedText(KEY_TOTAL, lang) };
         for (String header : headers) {
-            Cell cell = new Cell().add(new Paragraph(header).setFont(fontBold).setFontColor(ColorConstants.WHITE));
+            Cell cell = new Cell().add(new Paragraph(shapeAndReorder(header, lang)).setFont(fontBold).setFontColor(ColorConstants.WHITE));
             cell.setBackgroundColor(brandColor);
             cell.setPadding(6);
             cell.setBorder(new SolidBorder(borderColor, 1));
@@ -250,29 +265,29 @@ public class InvoiceServiceImpl implements InvoiceService {
         for (OfferReservation res : reservations) {
             ma.safar.morocco.offer.entity.Offer offer = res.getOffer();
             if (offer == null) {
-                table.addCell(createCell(getTranslatedText(KEY_NAME, lang) + " N/A", fontHelper, borderColor, TextAlignment.LEFT));
-                table.addCell(createCell("N/A", fontHelper, borderColor, TextAlignment.LEFT));
-                table.addCell(createCell(buildReservationDates(res), fontHelper, borderColor, TextAlignment.LEFT));
-                table.addCell(createCell(String.valueOf(res.getQuantity()), fontHelper, borderColor, TextAlignment.RIGHT));
-                table.addCell(createCell("0.00 MAD", fontHelper, borderColor, TextAlignment.RIGHT));
-                table.addCell(createCell(res.getTotalPrice() != null ? formatCurrency(res.getTotalPrice()) : "0.00 MAD", fontHelper, borderColor, TextAlignment.RIGHT));
+                table.addCell(createCell(shapeAndReorder(getTranslatedText(KEY_NAME, lang) + " N/A", lang), fontHelper, borderColor, TextAlignment.LEFT));
+                table.addCell(createCell(shapeAndReorder("N/A", lang), fontHelper, borderColor, TextAlignment.LEFT));
+                table.addCell(createCell(shapeAndReorder(buildReservationDates(res), lang), fontHelper, borderColor, TextAlignment.LEFT));
+                table.addCell(createCell(shapeAndReorder(String.valueOf(res.getQuantity()), lang), fontHelper, borderColor, TextAlignment.RIGHT));
+                table.addCell(createCell(shapeAndReorder("0.00 MAD", lang), fontHelper, borderColor, TextAlignment.RIGHT));
+                table.addCell(createCell(shapeAndReorder(res.getTotalPrice() != null ? formatCurrency(res.getTotalPrice()) : "0.00 MAD", lang), fontHelper, borderColor, TextAlignment.RIGHT));
                 continue;
             }
 
             String nameWithDetails = buildOfferNameDetails(offer);
             
-            table.addCell(createCell(nameWithDetails, fontHelper, borderColor, TextAlignment.LEFT));
+            table.addCell(createCell(shapeAndReorder(nameWithDetails, lang), fontHelper, borderColor, TextAlignment.LEFT));
             String offerTypeStr = offer.getType() != null ? offer.getType().toString() : "N/A";
-            table.addCell(createCell(offerTypeStr, fontHelper, borderColor, TextAlignment.LEFT));
-            table.addCell(createCell(buildReservationDates(res), fontHelper, borderColor, TextAlignment.LEFT));
-            table.addCell(createCell(String.valueOf(res.getQuantity()), fontHelper, borderColor, TextAlignment.RIGHT));
+            table.addCell(createCell(shapeAndReorder(offerTypeStr, lang), fontHelper, borderColor, TextAlignment.LEFT));
+            table.addCell(createCell(shapeAndReorder(buildReservationDates(res), lang), fontHelper, borderColor, TextAlignment.LEFT));
+            table.addCell(createCell(shapeAndReorder(String.valueOf(res.getQuantity()), lang), fontHelper, borderColor, TextAlignment.RIGHT));
 
             Double unitPrice = offer.getPrice();
             if (unitPrice == null) {
                 unitPrice = offer.getAveragePrice() != null ? offer.getAveragePrice() : offer.getPricePerNight();
             }
-            table.addCell(createCell(unitPrice != null ? formatCurrency(unitPrice) : "0.00 MAD", fontHelper, borderColor, TextAlignment.RIGHT));
-            table.addCell(createCell(res.getTotalPrice() != null ? formatCurrency(res.getTotalPrice()) : "0.00 MAD", fontHelper, borderColor, TextAlignment.RIGHT));
+            table.addCell(createCell(shapeAndReorder(unitPrice != null ? formatCurrency(unitPrice) : "0.00 MAD", lang), fontHelper, borderColor, TextAlignment.RIGHT));
+            table.addCell(createCell(shapeAndReorder(res.getTotalPrice() != null ? formatCurrency(res.getTotalPrice()) : "0.00 MAD", lang), fontHelper, borderColor, TextAlignment.RIGHT));
         }
         document.add(table);
         document.add(new Paragraph("\n"));
@@ -304,12 +319,12 @@ public class InvoiceServiceImpl implements InvoiceService {
         Table totalTable = new Table(1).setHorizontalAlignment(HorizontalAlignment.RIGHT);
         Cell totalCell = new Cell().setBorder(Border.NO_BORDER).setBackgroundColor(new DeviceRgb(240, 240, 240));
         totalCell.setPadding(10);
-        totalCell.add(new Paragraph(getTranslatedText(KEY_GRAND_TOTAL, lang) + " " + formatCurrency(invoice.getTotalAmount()))
+        totalCell.add(new Paragraph(shapeAndReorder(getTranslatedText(KEY_GRAND_TOTAL, lang) + " " + formatCurrency(invoice.getTotalAmount()), lang))
                 .setFont(fontBold).setFontSize(14).setTextAlignment(TextAlignment.RIGHT));
         totalTable.addCell(totalCell);
         document.add(totalTable);
 
-        Paragraph footer = new Paragraph(getTranslatedText(KEY_THANK_YOU, lang))
+        Paragraph footer = new Paragraph(shapeAndReorder(getTranslatedText(KEY_THANK_YOU, lang), lang))
                 .setFont(fontHelper)
                 .setFontSize(9)
                 .setFontColor(footerColor)
@@ -383,19 +398,19 @@ public class InvoiceServiceImpl implements InvoiceService {
             }
         } else if ("ar".equalsIgnoreCase(lang) || "ma".equalsIgnoreCase(lang)) {
             switch (key) {
-                case KEY_INVOICE: return "FACTURE";
-                case KEY_INVOICE_NO: return "N° Facture :";
-                case KEY_DATE: return "Date :";
-                case KEY_BILLED_TO: return "Facturé à :";
-                case KEY_ITINERARY: return "Itinéraire :";
-                case KEY_NAME: return "Nom";
-                case KEY_TYPE: return "Type";
-                case KEY_DATES: return KEY_DATES;
-                case KEY_QTY: return "Qté";
-                case KEY_UNIT_PRICE: return "Prix Unit.";
-                case KEY_TOTAL: return KEY_TOTAL;
-                case KEY_GRAND_TOTAL: return "TOTAL GÉNÉRAL :";
-                case KEY_THANK_YOU: return "Merci d'avoir choisi Safar Morocco !";
+                case KEY_INVOICE: return "فاتورة";
+                case KEY_INVOICE_NO: return "رقم الفاتورة:";
+                case KEY_DATE: return "التاريخ:";
+                case KEY_BILLED_TO: return "صدرت إلى:";
+                case KEY_ITINERARY: return "المسار:";
+                case KEY_NAME: return "الاسم";
+                case KEY_TYPE: return "النوع";
+                case KEY_DATES: return "التواريخ";
+                case KEY_QTY: return "الكمية";
+                case KEY_UNIT_PRICE: return "سعر الوحدة";
+                case KEY_TOTAL: return "المجموع";
+                case KEY_GRAND_TOTAL: return "المبلغ الإجمالي:";
+                case KEY_THANK_YOU: return "شكراً لاختيارك سفر المغرب!";
                 default: return key;
             }
         }
@@ -448,5 +463,21 @@ public class InvoiceServiceImpl implements InvoiceService {
                 .status(invoice.getStatus())
                 .pdfPath(invoice.getPdfPath())
                 .build();
+    }
+
+    private String shapeAndReorder(String text, String lang) {
+        if (!("ar".equalsIgnoreCase(lang) || "ma".equalsIgnoreCase(lang)) || text == null || text.isBlank()) {
+            return text;
+        }
+        try {
+            ArabicShaping shaper = new ArabicShaping(ArabicShaping.LETTERS_SHAPE | ArabicShaping.LENGTH_GROW_SHRINK);
+            String shaped = shaper.shape(text);
+            Bidi bidi = new Bidi(shaped, Bidi.DIRECTION_DEFAULT_RIGHT_TO_LEFT);
+            bidi.setReorderingMode(Bidi.REORDER_INVERSE_LIKE_DIRECT);
+            return bidi.writeReordered(Bidi.DO_MIRRORING);
+        } catch (ArabicShapingException e) {
+            log.error("Failed to shape Arabic text: {}", e.getMessage());
+            return text;
+        }
     }
 }
